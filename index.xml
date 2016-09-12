@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lorenzo Romagnoli</title>
+    <link>http://localhost:3000/</link>
+    <description>Recent content on Lorenzo Romagnoli</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:3000/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>about-me</title>
+      <link>http://localhost:3000/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:3000/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Casa Jasmina</title>
+      <link>http://localhost:3000/project/Casa_Jasmina/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:3000/project/Casa_Jasmina/</guid>
+      <description>
+
+&lt;h3 id=&#34;the-open-source-way-to-the-connected-home&#34;&gt;The open source way to the connected home&lt;/h3&gt;
+
+&lt;p&gt;Curated by Bruce Sterling, Massimo Banzi and Jasmina Teshanovich, &lt;a href=&#34;http://casajasmina.arduino.cc&#34;&gt;&amp;ldquo;Casa Jasmina&amp;rdquo;&lt;/a&gt; is an ongoing pilot project in the business space of domestic electronic networking, or, “the Internet of Things in the Home.” Our goal is to integrate traditional Italian skills in furniture and interior design with emergent skills in Italian open-source electronics.&lt;/p&gt;
+
+&lt;p&gt;What is really relevant to people in a &amp;ldquo;connected home&amp;rdquo;? What&amp;rsquo;s the real use of a connected washing machine or of a lamp that changes color? How can a connected experience enrich the life of the inhabitants of an apartment? What&amp;rsquo;s the relevance of Open Source software, open hardware and open design in this space?
+Those where some of the question that kicked off the project in 2014 when I joined the team as coordinator and lead interaction designer.&lt;/p&gt;
+
+&lt;p&gt;Casa Jasmina in the last two years has been an exceptionally fertile research hub and idea collector; many events, workshops, meetup, conferences, residencies have been organized to bring together companies, artists, designers and makers to discuss and envision the home of the future.&lt;/p&gt;
+
+&lt;p&gt;While the community and the interest in the project has been growing, the core team  of the project has been involved in an extensive user research process to test ideas and scenarios on spot. Continuesly iterating, generating new ideas and building new Connected devices based on the knowledge gained along the process.&lt;/p&gt;
+
+&lt;p&gt;As project manager and lead interaction designer I had the role of coordinating the team and the community effort in building novel connected use cases; I curated the space selecting interesting project to be showcased inside the apartment; I lead the ongoing user research plan, and held several design workshop.&lt;/p&gt;
+
+&lt;h3 id=&#34;awards-and-mentions&#34;&gt;Awards and mentions&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>whitebox</title>
+      <link>http://localhost:3000/project/White_Box/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:3000/project/White_Box/</guid>
+      <description>&lt;p&gt;Result of collaborative design sprint with Simone Rebaudengo from &lt;a href=&#34;http://www.automato.farm&#34;&gt;automato.farm&lt;/a&gt; the white Box is a new concept for a home control system that would be &amp;ldquo;transparently smart&amp;rdquo; to its user.
+During this 3 days thinking and hacking session we asked ourselves how &amp;ldquo;smart&amp;rdquo; can a home be? What kind of smartness are we talking about? Is technology in service of the user or is it becoming the controller of the user?&lt;/p&gt;
+
+&lt;p&gt;At the moment, If you want to make your home “smart”, most solutions in the market come in form of a black box that takes care of everything for you.
+Something that doesn’t have to be touched, with a simple and slick UI, something that feels almost magic, but utterly opaque.
+As these products are designed to to hide control and “simplify” complexity, the user that install them in the home doesn’t actually know what the system does: if it collects data, what kind of data, how the data are transformed or sold by the server administrator etc…&lt;/p&gt;
+
+&lt;p&gt;We tried to speculate on the topic designing a new interface called “THE WHITE BOX”.
+The white box, is a transparent interface to tweak your home behavior;
+It is accessible in the same way you can control the main electric switch box at your home, and you can tweak the experience by accessing simple sliders.&lt;/p&gt;
+
+&lt;p&gt;The white box expose the user with a higher level of intelligence than a simple control interface.
+It’s an evolution of the “backend” of an home of the future, a switchboard, allowing people to turn on and off and tweak the new inputs and outputs that a home of the future will have.
+You choose which data you want to feed the box, ( Biometric data, Location, Environment, Market data  etc..) While with the slider you can tweak the home behavior: choosing how much you want your home to remember or forget; if you want to publicly express what you are doing or keep it private; whether you home should learn from you or teach you best practices; finally, if you want the home to behave in a selfish way or just doing what’s best for the environment and the other .&lt;/p&gt;
+
+&lt;p&gt;We think of the white box as a product that it’s fictional, but real enough to communicate new needs and challenges that “smart” will bring to our homes. As designers, we have to move deeper in machines to understand the new mechanisms that smartness and connectivity bring, we need to design new interfaces to avoid people turning into unaware inputs.&lt;/p&gt;
+
+&lt;p&gt;Interested in develop the concept further? Just get in touch!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Monocono</title>
+      <link>http://localhost:3000/project/Monocono/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:3000/project/Monocono/</guid>
+      <description>&lt;p&gt;Monocono is a do-it-yourself kinetic and programmed artwork. It is a USB powered electronic kit featuring digitally fabricated parts and a programmable board. A potentiometer controls the speed of a small motor that drives two rods and creates the effect of a virtual conic volume. Monocono is a derivative kinetic artwork inspired to &lt;a href=&#34;http://www.reprogrammed-art.cc/library/51/Esacono,-G.-Anceschi,-%3Cbr%3ES.-Cangiano,-D.-Fornari,-2015&#34;&gt;Esacono&lt;/a&gt;, a translation of the concept that generated the series Strutturazioni cilindriche virtuali by Giovanni Anceschi (1963–1966). The Esacono concept is described in issue no. 22 of the magazine il verri, but it was never produced due to the constraints of technology of the period. It is a cube suspended by one corner which has six motors embedded into each side.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The motors drive two rotating rods that draw six truncated cone shapes in space, creating virtual volumes. The speed varies from motor to motor, and as a consequence so does the MONOCONO effect of the six shapes drawn in the air at the sides of the hanging cube.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In 2015, Esacono has been realized within the project &lt;a href=&#34;http://http://www.reprogrammed-art.cc/&#34;&gt;Re-programmed art&lt;/a&gt;, a research-action aiming at open sourcing and rediscovering kinetic and programmed art today.&lt;/p&gt;
+
+&lt;p&gt;The kit was designed to enable anyone to recreate it&amp;rsquo;s own kinetic sculpture, and to discuss about the meaning of Open Sourcing an Art piece, thus allowing anyone to make copies of it.
+Special attention was given to the design of the PCB, that had to be easy to assemble also for kids and non technical people.&lt;/p&gt;
+
+&lt;p&gt;To make your own Monocono, visit &lt;a href=&#34;www.github.com/casajasmina/monocono&#34;&gt;www.github.com/casajasmina/monocono&lt;/a&gt;
+Released under CC license BY SA 4.0&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Colors</title>
+      <link>http://localhost:3000/project/Colors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:3000/project/Colors/</guid>
+      <description>
+
+&lt;h3 id=&#34;an-analysis-of-the-usage-of-colors-in-relation-to-the-perception-of-depth&#34;&gt;An analysis of the usage of colors in relation to the perception of depth&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Generally speaking, warmth or cold in a colour means an approach respectively to yellow or to blue. This distinction is, so to speak, on one basis, the colour having a constant fundamental appeal, but assuming either a more material or more non-material quality. The movement is an horizontal one, the warm colours approaching the spectator, the cold ones retreating from him.&amp;rdquo;
+&lt;cite&gt;Concerning the spiritual in art, Wassily Kandinsky, 1911&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In “Concerning the Spiritual in Art”, Published in 1911 Kandisnki focuses on the meaning of colors. For every color he describes the emotion, the sound, and the movement that you can attach to that particular color.&lt;/p&gt;
+
+&lt;p&gt;The work focuses on the movement of colors trying to analyze one of Kandinsky masterpiece according to his theory, the same analysis has been conducted also on an other classical painting from Botticelli, ”the Birth of the Venus”.&lt;/p&gt;
+
+&lt;p&gt;The paintings are exploded in an interactive tridimensional space, the pixels in warm colors are moved towards the viewer of the painting while the one colored in cold colors are moved far from the viewer towards the background.
+The user is able to navigate the painting rotating the view, understanding how the color are important in those paintings to give a sense of depth and place some elements in foreground.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Arduino Cloud</title>
+      <link>http://localhost:3000/project/Arduino_Cloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:3000/project/Arduino_Cloud/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://cloud.arduino.cc&#34;&gt;Arduino Cloud&lt;/a&gt; is a new addition to the &lt;a href=&#34;http://create.arduino.cc&#34;&gt;Arduino Create&lt;/a&gt; platform.
+The goal of the platform is to give user a easy way to connect their Arduino Boards to the internet, monitor the status of its devices and connect one board to the other.
+The platform was designed with simplicity in mind: as well as the other Arduino products it is usable by beginners, and pro-users.&lt;/p&gt;
+
+&lt;p&gt;The project, developed the web team internal to Arduino, is still onGoing, and many features will be implemented in the coming months.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TINK</title>
+      <link>http://localhost:3000/project/Tink/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:3000/project/Tink/</guid>
+      <description>
+
+&lt;h3 id=&#34;a-web-plattform-to-sketch-the-internet-of-things&#34;&gt;A web plattform to sketch the Internet of Things&lt;/h3&gt;
+
+&lt;p&gt;Tink is a web platform that connects products with one another via the Internet, it provides designers with a complete Internet of Things (IOT) development environment.
+Designers are provided with a rich stack of features to sketch, prototype and test IOT projects. Tink is a user-friendly, visual, collaborative, open-source tool for designers to build connected interactions among objects.&lt;/p&gt;
+
+&lt;p&gt;User-Friendly
+Tink targets interaction designers with minimal Arduino experience who are able to read and understand at least some Arduino Code.
+This visual platform has a low learning barrier and its full functionality is easily discoverable through use.&lt;/p&gt;
+
+&lt;p&gt;Visual
+The interface hides most of the complexity of the system, allowing users with different skill sets to explore it and learn its different components.
+Tink provides users with visual building blocks to create functionalities without requiring any code to be written. Users more comfortable in writing code can do so within Tink and open, modify, or create new building blocks to share with the community.
+Tink is composed of 2 main views: one for editing the system and one for monitoring it.
+The edit view combines system diagram sketching environment with a building block library and an code editor.
+The monitor view combines a map displaying the locations of the entities and graphs visualizing data recorded by the entities.&lt;/p&gt;
+
+&lt;p&gt;Collaborative
+This web platform allows different users to access, modify, and monitor the project remotely and simultaneously&lt;/p&gt;
+
+&lt;p&gt;Open Source
+As an open source tool, similar to Wordpress and other content management systems (CMS), it will be possible to use a central version of the system, or install a private copy on a private server.&lt;/p&gt;
+
+&lt;p&gt;Do you want to follow the development of TINK and gcontribute to it?
+checkout Github.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>emotional lockscreen</title>
+      <link>http://localhost:3000/project/Emotional_Lockscreen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:3000/project/Emotional_Lockscreen/</guid>
+      <description>
+
+&lt;h3 id=&#34;representing-information-trough-moving-patterns&#34;&gt;Representing information trough moving patterns&lt;/h3&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/wrJg3VJTHMU?&#34; 
+  style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;How to represent information trough the most unobtrusive moving pattern was the goal of this project.
+In particular it was required to use moving pattern to represent the emotional state of 5 best friends.&lt;/p&gt;
+
+&lt;p&gt;It was decided to implement the design as an interactive background image for smartphone.&lt;/p&gt;
+
+&lt;p&gt;A base moving grid is affected in five fixed points by forces that are representative of friends&amp;rsquo; emotional states&lt;/p&gt;
+
+&lt;p&gt;Slow and smooth movements are associated with relaxed and calm states while faster, noisier and more energetic are associated with more negative emotional states; those are also more visible and demand the user for intervention in taking care of his/her friends.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/VXFht6v513I?&#34; 
+  style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In order to get to a final design several experiments were carried out and tested.
+Once the basic idea of the moving grid was decided, a Processing app was developed that would allow the design team to change the style and details of the visualization on the fly.
+The parameters of pulse speed, noise level and dynamic of the movement where used as minimal element to produce a congruent set of expressive moving patterns.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wink</title>
+      <link>http://localhost:3000/project/Wink/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:3000/project/Wink/</guid>
+      <description>&lt;p&gt;Wink is like a dog that makes you interact with other people. It has autonomous behaviour and it cannot be cotrolled by the user.&lt;/p&gt;
+
+&lt;p&gt;While you are cycling, Wink expresses itself by moving the pupil and by making little sounds.
+When Wink detects someone, it tries to communicate with the other and attract his attention. The moment of awkward curiosity created acts as an icebreaker between the two cyclists. It will trigger some kind of communication or at least will be an excuse to exchange a smile.
+When multiple Winks meet each other they get excited and start talking to each other. When more winks are together, the conversation between them becomes more chaotic.
+Eventually cyclists will feel sorry to separate the Winks and they will cycle together; hopefully starting a conversation.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SPARK</title>
+      <link>http://localhost:3000/project/Spark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:3000/project/Spark/</guid>
+      <description>&lt;p&gt;JUMP project commissioned by tvilight JULY 2013&lt;/p&gt;
+
+&lt;p&gt;Tvilight asked us to develop an intelligent product service system that would extend their activities towards the dense urban area. They currently produce an intelligent street lighting solution that dims when there is no activity on the street, saving up to 80% in energy consumption.&lt;/p&gt;
+
+&lt;p&gt;We developed a concept and a network of sensors capable of detecting the availability of free parking lot in town.&lt;/p&gt;
+
+&lt;p&gt;The sensor was running on battery and installed underground between two or more parking lot.&lt;/p&gt;
+
+&lt;p&gt;A profile matching algorithm was used to determine how many cars and in which configuration they were parked.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Digital Lathe</title>
+      <link>http://localhost:3000/project/DigitalLathe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:3000/project/DigitalLathe/</guid>
+      <description>&lt;p&gt;Digital Lathe is a project that wants to highlight the potentiality offered by digital fabrication tools.
+It aims at giving the possibility to end user to design and produce a personalized object.&lt;/p&gt;
+
+&lt;p&gt;A system was developed in which Arduino estimates the real diameter of a physical collapsible circle and sends the data to Blender that consequently modifies a parametric vase.
+Thanks to a 3d printer, it is then possible to manufacture the produced design.&lt;/p&gt;
+
+&lt;p&gt;FabLab Italia set up a shop during Turin Street Fair, making their digital lathe accessible to the public.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This video is (further) proof that it’s fun to empower makers.
+FabLab Italia set up shop at a Turin Street Fair, making their digital lathe accessible to the public. The lathe works by allowing people to manipulate the radius of an object at various points along the axis. The radius is adjusted by twisting the wooden discs. Potentiometers measure this twist and the values are then conveyed via Arduino into Blender, which produces the STL file, which is then output on the MakerBot.
+I like every thing that&amp;rsquo;s going on here, particularly the looks on the faces of people who have just made something new!
+This would be a great thing to do anytime, with a MakerBot, an EggBot, a knitting machine; whatever. Just set it up in public somewhere and watch people react to it.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;[via Adafruit/johngineer]&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

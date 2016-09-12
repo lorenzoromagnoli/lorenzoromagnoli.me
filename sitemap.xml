@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://localhost:3000/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:3000/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:3000/project/Casa_Jasmina/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:3000/project/White_Box/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:3000/project/Monocono/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:3000/project/Colors/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:3000/project/Arduino_Cloud/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:3000/project/Tink/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:3000/project/Emotional_Lockscreen/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:3000/project/Wink/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:3000/project/Spark/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:3000/project/DigitalLathe/</loc>
+  </url>
+  
+</urlset>
