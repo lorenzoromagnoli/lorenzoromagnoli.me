@@ -350,10 +350,8 @@ font-size: 14px;
     margin-top: 0px;
 }
 .arrows {
-    top: 50%;
-    position: fixed;
     width: 100%;
-    padding: 0px 50px;
+    margin-top: 50px;
 }
 .arrows .next {
     float: right;
@@ -393,9 +391,7 @@ float: left;
   margin-bottom: 50px;
 
 }
-#footer{
-  background-color: #c8ff00;
-}
+
 #about-me h2{
   background-color: #c8ff00;
 
@@ -474,4 +470,18 @@ cite {
     display: block;
     font-weight: 400;
     font-size: smaller;
+}
+
+#footer{
+    padding: 50px 0 !important;
+    padding: 50px 0 !important;
+color: #f0a;
+font-weight: 900;
+text-transform: uppercase;
+font-size: xx-small;
+}
+
+#footer a{
+  color: #f0a;
+
 }
