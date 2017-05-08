@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Lorenzo Romagnoli</title>
-    <link>/lorenzoromagnoli.me/project/index.xml</link>
+    <link>http://lorenzoromagnoli.me/project/index.xml</link>
     <description>Recent content in Projects on Lorenzo Romagnoli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/lorenzoromagnoli.me/project/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://lorenzoromagnoli.me/project/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Casa Jasmina</title>
-      <link>/lorenzoromagnoli.me/project/Casa_Jasmina/</link>
+      <link>http://lorenzoromagnoli.me/project/Casa_Jasmina/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/lorenzoromagnoli.me/project/Casa_Jasmina/</guid>
+      <guid>http://lorenzoromagnoli.me/project/Casa_Jasmina/</guid>
       <description>
 
 &lt;h3 id=&#34;the-open-source-way-to-the-connected-home&#34;&gt;The open source way to the connected home&lt;/h3&gt;
@@ -33,10 +33,10 @@ Those where some of the question that kicked off the project in 2014 when I join
     
     <item>
       <title>whitebox</title>
-      <link>/lorenzoromagnoli.me/project/White_Box/</link>
+      <link>http://lorenzoromagnoli.me/project/White_Box/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/lorenzoromagnoli.me/project/White_Box/</guid>
+      <guid>http://lorenzoromagnoli.me/project/White_Box/</guid>
       <description>&lt;p&gt;Result of collaborative design sprint with Simone Rebaudengo from &lt;a href=&#34;http://www.automato.farm&#34;&gt;automato.farm&lt;/a&gt; the white Box is a new concept for a home control system that would be &amp;ldquo;transparently smart&amp;rdquo; to its user.
 During this 3 days thinking and hacking session we asked ourselves how &amp;ldquo;smart&amp;rdquo; can a home be? What kind of smartness are we talking about? Is technology in service of the user or is it becoming the controller of the user?&lt;/p&gt;
 
@@ -60,10 +60,10 @@ You choose which data you want to feed the box, ( Biometric data, Location, Envi
     
     <item>
       <title>Monocono</title>
-      <link>/lorenzoromagnoli.me/project/Monocono/</link>
+      <link>http://lorenzoromagnoli.me/project/Monocono/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/lorenzoromagnoli.me/project/Monocono/</guid>
+      <guid>http://lorenzoromagnoli.me/project/Monocono/</guid>
       <description>&lt;p&gt;Monocono is a do-it-yourself kinetic and programmed artwork. It is a USB powered electronic kit featuring digitally fabricated parts and a programmable board. A potentiometer controls the speed of a small motor that drives two rods and creates the effect of a virtual conic volume. Monocono is a derivative kinetic artwork inspired to &lt;a href=&#34;http://www.reprogrammed-art.cc/library/51/Esacono,-G.-Anceschi,-%3Cbr%3ES.-Cangiano,-D.-Fornari,-2015&#34;&gt;Esacono&lt;/a&gt;, a translation of the concept that generated the series Strutturazioni cilindriche virtuali by Giovanni Anceschi (1963–1966). The Esacono concept is described in issue no. 22 of the magazine il verri, but it was never produced due to the constraints of technology of the period. It is a cube suspended by one corner which has six motors embedded into each side.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -82,10 +82,10 @@ Released under CC license BY SA 4.0&lt;/p&gt;
     
     <item>
       <title>Colors</title>
-      <link>/lorenzoromagnoli.me/project/Colors/</link>
+      <link>http://lorenzoromagnoli.me/project/Colors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/lorenzoromagnoli.me/project/Colors/</guid>
+      <guid>http://lorenzoromagnoli.me/project/Colors/</guid>
       <description>
 
 &lt;h3 id=&#34;an-analysis-of-the-usage-of-colors-in-relation-to-the-perception-of-depth&#34;&gt;An analysis of the usage of colors in relation to the perception of depth&lt;/h3&gt;
@@ -106,10 +106,10 @@ The user is able to navigate the painting rotating the view, understanding how t
     
     <item>
       <title>Arduino Cloud</title>
-      <link>/lorenzoromagnoli.me/project/Arduino_Cloud/</link>
+      <link>http://lorenzoromagnoli.me/project/Arduino_Cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/lorenzoromagnoli.me/project/Arduino_Cloud/</guid>
+      <guid>http://lorenzoromagnoli.me/project/Arduino_Cloud/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://cloud.arduino.cc&#34;&gt;Arduino Cloud&lt;/a&gt; is a new addition to the &lt;a href=&#34;http://create.arduino.cc&#34;&gt;Arduino Create&lt;/a&gt; platform.
 The goal of the platform is to give user a easy way to connect their Arduino Boards to the internet, monitor the status of its devices and connect one board to the other.
 The platform was designed with simplicity in mind: as well as the other Arduino products it is usable by beginners, and pro-users.&lt;/p&gt;
@@ -120,10 +120,10 @@ The platform was designed with simplicity in mind: as well as the other Arduino 
     
     <item>
       <title>TINK</title>
-      <link>/lorenzoromagnoli.me/project/Tink/</link>
+      <link>http://lorenzoromagnoli.me/project/Tink/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/lorenzoromagnoli.me/project/Tink/</guid>
+      <guid>http://lorenzoromagnoli.me/project/Tink/</guid>
       <description>
 
 &lt;h3 id=&#34;a-web-platform-to-sketch-the-internet-of-things&#34;&gt;A web platform to sketch the Internet of Things&lt;/h3&gt;
@@ -164,10 +164,10 @@ The monitor view combines a map displaying the locations of the entities and gra
     
     <item>
       <title>emotional lockscreen</title>
-      <link>/lorenzoromagnoli.me/project/Emotional_Lockscreen/</link>
+      <link>http://lorenzoromagnoli.me/project/Emotional_Lockscreen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/lorenzoromagnoli.me/project/Emotional_Lockscreen/</guid>
+      <guid>http://lorenzoromagnoli.me/project/Emotional_Lockscreen/</guid>
       <description>
 
 &lt;h3 id=&#34;representing-information-trough-moving-patterns&#34;&gt;Representing information trough moving patterns&lt;/h3&gt;
@@ -201,10 +201,10 @@ The parameters of pulse speed, noise level and dynamic of the movement where use
     
     <item>
       <title>Wink</title>
-      <link>/lorenzoromagnoli.me/project/Wink/</link>
+      <link>http://lorenzoromagnoli.me/project/Wink/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/lorenzoromagnoli.me/project/Wink/</guid>
+      <guid>http://lorenzoromagnoli.me/project/Wink/</guid>
       <description>&lt;p&gt;Wink is like a dog that makes you interact with other people. It has autonomous behaviour and it cannot be cotrolled by the user.&lt;/p&gt;
 
 &lt;p&gt;While you are cycling, Wink expresses itself by moving the pupil and by making little sounds.
@@ -216,10 +216,10 @@ Eventually cyclists will feel sorry to separate the Winks and they will cycle to
     
     <item>
       <title>SPARK</title>
-      <link>/lorenzoromagnoli.me/project/Spark/</link>
+      <link>http://lorenzoromagnoli.me/project/Spark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/lorenzoromagnoli.me/project/Spark/</guid>
+      <guid>http://lorenzoromagnoli.me/project/Spark/</guid>
       <description>&lt;p&gt;JUMP project commissioned by tvilight JULY 2013&lt;/p&gt;
 
 &lt;p&gt;Tvilight asked us to develop an intelligent product service system that would extend their activities towards the dense urban area. They currently produce an intelligent street lighting solution that dims when there is no activity on the street, saving up to 80% in energy consumption.&lt;/p&gt;
@@ -234,10 +234,10 @@ Eventually cyclists will feel sorry to separate the Winks and they will cycle to
     
     <item>
       <title>Digital Lathe</title>
-      <link>/lorenzoromagnoli.me/project/DigitalLathe/</link>
+      <link>http://lorenzoromagnoli.me/project/DigitalLathe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/lorenzoromagnoli.me/project/DigitalLathe/</guid>
+      <guid>http://lorenzoromagnoli.me/project/DigitalLathe/</guid>
       <description>&lt;p&gt;Digital Lathe is a project that wants to highlight the potentiality offered by digital fabrication tools.
 It aims at giving the possibility to end user to design and produce a personalized object.&lt;/p&gt;
 
