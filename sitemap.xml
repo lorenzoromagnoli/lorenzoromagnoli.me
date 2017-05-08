@@ -2,14 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://lorenzoromagnoli.github.io/lorenzoromagnoli.me/</loc>
-  </url>
-  
-  <url>
-    <loc>https://lorenzoromagnoli.github.io/lorenzoromagnoli.me/about/</loc>
-  </url>
-  
-  <url>
     <loc>https://lorenzoromagnoli.github.io/lorenzoromagnoli.me/project/Casa_Jasmina/</loc>
   </url>
   
@@ -47,6 +39,20 @@
   
   <url>
     <loc>https://lorenzoromagnoli.github.io/lorenzoromagnoli.me/project/DigitalLathe/</loc>
+  </url>
+  
+  <url>
+    <loc>https://lorenzoromagnoli.github.io/lorenzoromagnoli.me/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lorenzoromagnoli.github.io/lorenzoromagnoli.me/project/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lorenzoromagnoli.github.io/lorenzoromagnoli.me/about/</loc>
   </url>
   
 </urlset>

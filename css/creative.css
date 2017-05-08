@@ -374,6 +374,20 @@ float: left;
   vertical-align: middle;
 }
 
+#about-me a .fa{
+  color: #000;
+  padding: 10px;
+}
+
+#about-me a.social-links:hover{
+  text-decoration: none;
+}
+
+#about-me a .fa:hover{
+  color: #000;
+  background-color:#c8ff00;
+  text-decoration: none;
+}
 .vcenter {
     display: inline-block;
     vertical-align: middle;
