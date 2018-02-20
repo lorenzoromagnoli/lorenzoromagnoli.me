@@ -89,13 +89,13 @@ for (var i = 0; i <= colCount; i++) {
 
 function moveGridUp() {
 	for (var i = 0; i < grid.length; i++) {
-		setTimeout(moveDotUp, i * 2, i);
+		setTimeout(moveDotUp, i , i);
 	}
 }
 
 function moveGridDown() {
 	for (var i = 0; i < grid.length; i++) {
-		setTimeout(moveDotDown, i * 2, i);
+		setTimeout(moveDotDown, i , i);
 	}
 }
 
