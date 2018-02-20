@@ -149,7 +149,7 @@ section.fullpage {
 		background: #EDEDED;
 		border: 21px solid #FFFFFF;
 		width: 700px;
-		height: 400px;
+		height: 450px;
 		margin-left: 0px;
 		margin-top: 2rem;
 	}
@@ -158,11 +158,12 @@ section.fullpage {
 	.text-container {
 		position: absolute;
 		right: 0;
-		top: 10rem;
 		background-color: #2828E9;
-		width: 300px;
-		height: 300px;
-		padding: 1rem;
+		width: 250px;
+		height: 250px;
+		padding: 1.5rem;
+		border: 1px solid white;
+		top: 25%;
 
 		.title {
 			/* YIBU: */
@@ -175,9 +176,28 @@ section.fullpage {
 
 		.paragraph {
 			font-family: RobotoMono-Light;
-			font-size: 28px;
-			color: #FFFFFF;
-			letter-spacing: 0;
+    font-size: 22px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: left;
+    margin-top: .6rem;
+		}
+
+		.link{
+			width: 50px;
+	    height: 50px;
+	    border-radius: 25px;
+	    background-color: white;
+	    color: #2828E9;
+	    display: block;
+	    position: absolute;
+	    bottom: 1.5rem;
+	    margin: auto;
+	    transform: translateX(-50%);
+	    left: 50%;
+	    font-size: 3rem;
+	    text-decoration: none;
+	    line-height: 42px;
 		}
 	}
 }
@@ -188,4 +208,19 @@ section.fullpage {
 
 .responsive-background-image{
 	background-size: cover !important;
+}
+.responsive-background-video{
+	max-width: 100%;
+	overflow: hidden;
+
+	.background-video{
+		 max-width: 110%;
+		 max-height: 110%;
+		width: auto;
+		height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	}
 }

@@ -22,24 +22,34 @@ $(document).ready(function() {
 
 	//animate the grid when in view
 	inView('#slide_2')
-	.on('enter', function() {
-		console.log('enter');
-		moveGridUp();
-	}).on('exit', function(){
-		console.log('exit');
-		moveGridDown();
-	});
+		.on('enter', function() {
+			console.log('enter');
+			moveGridUp();
+		}).on('exit', function() {
+			console.log('exit');
+			moveGridDown();
+		});
+
+
+		//start the video on init, must stay before slick init
+		$('.portfolio-carousel').on('init', function(ev, el) {
+			$('video').each(function() {
+				console.log("video");
+				this.play();
+			});
+		});
 
 	//init the portfolio carousel in home;
 	$('.portfolio-carousel').slick({
-		'dots':true
+		'dots': true
 	});
 
 	//start loading the responsive_background_images
-		let elements = document.querySelectorAll('.responsive-background-image');
-		for (let i = 0; i < elements.length; i++) {
-			new rb_image(elements[i]);
-		}
+	let elements = document.querySelectorAll('.responsive-background-image');
+	for (let i = 0; i < elements.length; i++) {
+		new rb_image(elements[i]);
+	}
+
 
 
 });
@@ -48,24 +58,24 @@ $(document).ready(function() {
 
 var s = Snap("#dots-bg");
 var grid = [];
-var gridStep=36;
+var gridStep = 36;
 
 //here I calculate some numbers for creating the grid
-var gridContainerW= $("#dots-bg").width();
-var gridContainerH= $("#dots-bg").height();
+var gridContainerW = $("#dots-bg").width();
+var gridContainerH = $("#dots-bg").height();
 
 
-if (gridContainerW>600){
-	gridStep=36;
-}else if(gridContainerW<500){
-	gridStep=30;
+if (gridContainerW > 600) {
+	gridStep = 36;
+} else if (gridContainerW < 500) {
+	gridStep = 30;
 }
 
-var rowCount=Math.floor(gridContainerW/gridStep);
-var colCount=Math.floor(gridContainerH/gridStep);
+var rowCount = Math.floor(gridContainerW / gridStep);
+var colCount = Math.floor(gridContainerH / gridStep);
 
 //make the container that need to snap to the grid same width as the gridStep
-$('.grid-snap').width(gridStep*rowCount);
+$('.grid-snap').width(gridStep * rowCount);
 
 for (var i = 0; i <= colCount; i++) {
 	for (var j = 0; j <= rowCount; j++) {
@@ -82,6 +92,7 @@ function moveGridUp() {
 		setTimeout(moveDotUp, i * 2, i);
 	}
 }
+
 function moveGridDown() {
 	for (var i = 0; i < grid.length; i++) {
 		setTimeout(moveDotDown, i * 2, i);
@@ -90,12 +101,17 @@ function moveGridDown() {
 
 function moveDotUp(i) {
 	var dot = grid[i];
-	dot.animate({cy: parseInt(dot.attr('cy')) - 200}, 500);
+	dot.animate({
+		cy: parseInt(dot.attr('cy')) - 200
+	}, 500);
 
 }
+
 function moveDotDown(i) {
 	var dot = grid[i];
-	dot.animate({cy: parseInt(dot.attr('cy')) + 200}, 500);
+	dot.animate({
+		cy: parseInt(dot.attr('cy')) + 200
+	}, 500);
 }
 
 

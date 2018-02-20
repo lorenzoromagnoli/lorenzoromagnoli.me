@@ -17,8 +17,8 @@
 				<div class="container">
 
 					{{ if eq .Params.bannertype "video"}}
-						<div class="img-container responsive-background-image" data-aos="slide-up">
-							video
+						<div class="img-container responsive-background-video" data-aos="slide-up">
+							{{ partial "responsiveBackgroundVideo" (dict "video" .Params.banner ) }}
 						</div>
 					{{end}}
 
