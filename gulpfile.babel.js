@@ -10,6 +10,8 @@ import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
 import less from "gulp-less";
 import path from "path";
+import responsive from "gulp-responsive";
+
 
 const browserSync = BrowserSync.create();
 
@@ -22,8 +24,8 @@ gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 
 // Build/production tasks
-gulp.task("build", ["less", "js"], (cb) => buildSite(cb, [], "production"));
-gulp.task("build-preview", ["less", "js"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+gulp.task("build", ["less", "copyassets","images","copyVideo", "js"], (cb) => buildSite(cb, [], "production"));
+gulp.task("build-preview", ["less","copyassets","images","copyVideo", "js"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
 
 // // Compile CSS with PostCSS
 // gulp.task("css", () => (
@@ -32,6 +34,17 @@ gulp.task("build-preview", ["less", "js"], (cb) => buildSite(cb, hugoArgsPreview
 //     .pipe(gulp.dest("./dist/css"))
 //     .pipe(browserSync.stream())
 // ));
+
+gulp.task('copyassets', function() {
+	gulp.src('./src/css/**/*')
+		.pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task('copyVideo', function() {
+	gulp.src('./vid/**.*')
+		.pipe(gulp.dest('./dist/assets/video'));
+});
+
 
 gulp.task('less', function () {
 	 	gulp.src('./src/less/main.less')
@@ -57,6 +70,55 @@ gulp.task("js", (cb) => {
   });
 });
 
+
+
+//task for responsive images
+gulp.task('images', function() {
+	return gulp.src(['img/*.{jpg,png}'])
+		.pipe(responsive({
+			'*': [{
+					rename: {
+						suffix: ''
+					},	
+				},{
+					width: 100,
+					withoutEnlargement: false,
+					rename: {
+						suffix: '-thumbnail'
+					},
+				}, {
+					width: 1024,
+					withoutEnlargement: false,
+					rename: {
+						suffix: '-large'
+					},
+				}, {
+					width: 800,
+					withoutEnlargement: false,
+					rename: {
+						suffix: '-medium'
+					},
+				}
+			]
+		}, {
+			// Global configuration for all images
+			// The output quality for JPEG, WebP and TIFF output formats
+			quality: 70,
+			// Use progressive (interlace) scan for JPEG and PNG output
+			progressive: true,
+			// Zlib compression level of PNG output format
+			compressionLevel: 6,
+			// Strip all metadata
+			withMetadata: false,
+
+			skipOnEnlargement: false,
+			errorOnEnlargement: false,
+		}))
+		.pipe(gulp.dest('dist/assets/img'));
+});
+
+
+
 // Development server with browsersync
 gulp.task("server", ["hugo", "less", "js"], () => {
   browserSync.init({
@@ -67,6 +129,9 @@ gulp.task("server", ["hugo", "less", "js"], () => {
   gulp.watch("./src/js/**/*.js", ["js"]);
 	gulp.watch("./src/less/**/*.less", ["less"]);
   gulp.watch("./site/**/*", ["hugo"]);
+	gulp.watch("./vid/**/*", ["copyVideo"]);
+	gulp.watch("./img/**/*", ["images"]);
+
 });
 
 /**

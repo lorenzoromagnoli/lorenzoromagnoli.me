@@ -9,11 +9,18 @@ import AOS from 'aos';
 
 import 'slick-carousel';
 
+import rb_image from "./responsive_background_images"
+
+
 var Snap = require("imports-loader?this=>window,fix=>module.exports=0!snapsvg/dist/snap.svg.js");
 
 
 $(document).ready(function() {
-	console.log('ready');
+
+	//start the animation on scroll
+	AOS.init();
+
+	//animate the grid when in view
 	inView('#slide_2')
 	.on('enter', function() {
 		console.log('enter');
@@ -24,14 +31,16 @@ $(document).ready(function() {
 	});
 
 	//init the portfolio carousel in home;
-
-
 	$('.portfolio-carousel').slick({
 		'dots':true
 	});
-	//initCustomCarousel();
 
-	AOS.init();
+	//start loading the responsive_background_images
+		let elements = document.querySelectorAll('.responsive-background-image');
+		for (let i = 0; i < elements.length; i++) {
+			new rb_image(elements[i]);
+		}
+
 
 });
 

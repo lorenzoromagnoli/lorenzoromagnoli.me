@@ -1,52 +1,48 @@
 <section class="fullpage bg-light-grey">
-	<div class="container">
 
-
-		<div class="center-container">
+	<div class="center-container">
+		<div class="container">
 
 			<div class="portfolio-title">
 				We worked on future toys, the first open source connect home and more secret stuff.
 			</div>
 
-			<div class="portfolio-carousel">
+		</div>
 
-				<div class="slide" id="1">
-					<div class="img-container" data-aos="slide-up">
-						ooooooo
-					</div>
+		<div class="portfolio-carousel">
+
+			{{ range where .Data.Pages "Section" "portfolio" }}
+
+			<div class="slide">
+				<div class="container">
+
+					{{ if eq .Params.bannertype "video"}}
+						<div class="img-container responsive-background-image" data-aos="slide-up">
+							video
+						</div>
+					{{end}}
+
+					{{ if eq .Params.bannertype "photo"}}
+						<div class="img-container responsive-background-image" data-aos="slide-up">
+							{{ partial "responsiveBackgroundImage" (dict "imageName" .Params.banner ) }}
+						</div>
+					{{end}}
+
 					<div class="text-container" data-aos="slide-up" data-aos-delay=100>
 						<div class="title">
-							YIBU
+							{{.Title}}
 						</div>
 						<div class="paragraph">
-							connected toy
+							{{.Params.shortParagraph}}
 						</div>
 						<a href="#" class="link">+</a>
 					</div>
-				</div>
 
-				<div class="slide" id="2">
-					<div class="img-container" data-aos="slide-up">
-						ooooooo
-					</div>
-					<div class="text-container" data-aos="slide-up" data-aos-delay=100>
-						<div class="title">
-							YIBU
-						</div>
-						<div class="paragraph">
-							connected toy
-						</div>
-						<a href="#" class="link">+</a>
-					</div>
 				</div>
 			</div>
-		</div>
-		<div class="control-arrows">
 
+			{{end}}
 		</div>
 
-		<div class="dots">
-
-		</div>
 	</div>
 </section>
