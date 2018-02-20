@@ -18,7 +18,9 @@ var Snap = require("imports-loader?this=>window,fix=>module.exports=0!snapsvg/di
 $(document).ready(function() {
 
 	//start the animation on scroll
-	AOS.init();
+	AOS.init({
+		offset: 20,
+	});
 
 	//animate the grid when in view
 	inView('#slide_2')
