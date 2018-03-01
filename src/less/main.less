@@ -1,89 +1,223 @@
+@import (less) './custom_grid';
 @import (less) '../css/aos.css';
 @import (less) '../css/slick.css';
 @import (less) '../css/slick-theme.css';
 @import url( 'https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700');
+//some color variables
+@deep-blue: #2828E9;
+@black: #000;
+@warm-grey: #e0e0e0;
+@white: #fff;
 
 html {
 	body {
-		font-family: sans-serif;
-		font-size: 1em;
-		text-align: center;
+		font-family: Roboto Mono;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 39px;
+		font-size: 22px;
+		margin: 0px;
+	}
+}
+
+h1 {
+	font-family: Roboto Mono;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 55px;
+	font-size: 28px;
+	line-height: 40px;
+	margin: 0;
+}
+
+.text-blue {
+	color: @deep-blue;
+	font-weight: bold;
+}
+
+h1.padded-multiline {
+	margin-top: 0;
+	height: 40px;
+	padding: 0 20px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.with-shadow {
+	box-shadow: 4px 4px black;
+}
+
+.text-box {
+	padding: 20px;
+}
+
+a {
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	color: @deep-blue;
+	font-weight: bold;
+}
+
+.v-center {
+	height: 100%;
+
+	.container {
+		top: 50%;
+		transform: translateY(-50%);
 	}
 }
 
 .container {
 	max-width: 937px;
 	margin: auto;
-	height: 100%;
 	position: relative;
 }
-.center-container{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	margin:0 auto;
-	width: 100%;
+
+.row {
+	margin-bottom: 80px;
+	&:last-child{
+		margin-bottom: 0px;
+	}
 }
 
 section.fullpage {
-	height: 90vh;
+	height: 100vh;
 	padding-top: 8rem;
 	padding-bottom: 8rem;
 	position: relative;
 	overflow: hidden;
 
-	&.nopadding{
-		padding-top: 1rem;
-		padding-bottom: 1rem;
+	&.auto-height {
+		height: auto;
 	}
 
-	@media screen and (max-width: 480px){
+	&.nopadding {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	@media screen and (max-width: 480px) {
 		padding-top: 2rem;
 		padding-bottom: 2rem;
 	}
 }
 
-#dots-bg {
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
-}
-
 .bg-grey {
-	background-color: #EDEDED;
+	background-color: @warm-grey;
 }
 
-.bg-light-grey {
-	background-color: #F9F9F9;
+.bg-white {
+	background-color: @white;
 }
 
-.title {
-	font-family: Roboto Mono;
-	font-size: 115px;
-	color: #2828E9;
-	letter-spacing: 0;
-	font-weight: 700;
+.bg-blue{
+	background-color: @deep-blue;
+}
 
-	@media screen and (max-width: 480px){
-		font-size: 65px;
+.bg-black{
+	background-color: @black;
+}
+
+#hero {
+	.title {
+		margin: 0 auto;
+		text-align: center;
+
+		.main {
+			display: inline-block;
+			line-height: 160px;
+			text-align: center;
+			font-size: 115px;
+			color: @deep-blue;
+			letter-spacing: 0;
+			font-weight: 700;
+			@media screen and (max-width: 480px) {
+				font-size: 65px;
+			}
+		}
+
+		.wtf {
+			display: inline-block;
+			background-color: @deep-blue;
+			width: 40px;
+			height: 40px;
+			border-radius: 20px;
+			font-size: 18px;
+			color: white;
+			font-weight: 200;
+			top: 0;
+			position: absolute;
+			overflow: hidden;
+			transition: 0.3s all;
+			line-height: 20px;
+			text-align: center;
+
+			&.expanded {
+				width: 250px;
+				height: 250px;
+				border-radius: 125px;
+				background-color: white;
+				border: 4px solid @deep-blue;
+				top: -210px;
+				margin-left: -30px;
+			}
+
+			.collapsed {
+				padding: 8px;
+				cursor: pointer;
+			}
+
+			.expanded {
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+				font-size: 16px;
+				text-align: center;
+
+				.fonetics {
+					color: @deep-blue;
+					display: block;
+				}
+
+				.description {
+					color: @black;
+					display: block;
+				}
+
+				.link {
+					text-transform: uppercase;
+					display: block;
+				}
+
+				.description,
+				.fonetics,
+				.link {
+					margin-top: 20px;
+				}
+			}
+		}
 	}
 
+	.subtitle {
+		text-align: center;
+		font-style: normal;
+		font-weight: normal;
+		line-height: normal;
+		font-size: 28px;
+	}
 }
 
-.fonetics {
-	/* an´te`fact` ____ (ăn: */
-	font-family: Roboto Mono;
-	font-size: 28px;
-	color: #2828E9;
-	letter-spacing: 0;
-	//text-align: left;
-	margin-top: 2rem;
-	font-weight: 400;
-
-	@media screen and (max-width: 480px){
-		font-size: 20px;
+#hero {
+	.textbox {
+		margin-top: 50px;
 	}
-
 }
 
 .caption {
@@ -95,8 +229,7 @@ section.fullpage {
 	//text-align: left;
 	margin-top: 1.5rem;
 	font-weight: 300;
-
-	@media screen and (max-width: 480px){
+	@media screen and (max-width: 480px) {
 		font-size: 20px;
 	}
 }
@@ -117,57 +250,14 @@ section.fullpage {
 		left: 60px;
 		line-height: 30px;
 	}
-	@media screen and (max-width: 480px){
+	@media screen and (max-width: 480px) {
 		top: 60px;
 		left: 30px;
 	}
 }
-
-.padded-multiline {
-	width: 500px;
-	margin: 0;
-}
-
-.padded-multiline h1 {
-	background-color: #fff;
-	margin-top: 0;
-	height: 36px;
-	line-height: 36px;
-	display: inline-block;
-	padding: 0 13px;
-	margin-bottom: 0;
-	/* An interaction & pro: */
-	font-family: Roboto Mono;
-	font-size: 28px;
-	color: #000000;
-	letter-spacing: 0;
-	line-height: 42px;
-	box-shadow: 6px 6px black;
-	font-weight: 400;
-}
 //this is the textbox on top of the grid
-
 .text-box {
 	background-color: white;
-	max-width: 620px;
-	position: absolute;
-	left: 144px;
-	top: 199px;
-	font-family: Roboto Mono;
-	font-size: 22px;
-	color: #000000;
-	letter-spacing: 0;
-	line-height: 39px;
-	text-align: left;
-	padding: 36px;
-	border: 1px solid blue;
-	font-weight: 300;
-
-	@media screen and (max-width: 480px){
-		left: 30px;
-		font-size: 18px;
-		line-height: 22px;
-	}
 }
 
 .portfolio-title {
@@ -180,8 +270,7 @@ section.fullpage {
 	line-height: 42px;
 	text-align: left;
 	max-width: 60%;
-
-	@media screen and (max-width: 480px){
+	@media screen and (max-width: 480px) {
 		max-width: 100%;
 		font-size: 25px;
 		line-height: 30px;
@@ -190,82 +279,69 @@ section.fullpage {
 }
 
 .portfolio-carousel {
-	transition: all 1s;
+	width: 100%;
+	height: auto;
 
 	.slide {
-		display: inline-block;
-		float: left;
-		transition: all 1s;
-		position: relative;
-	}
+		&.fullpage {
+			height: 100vh;
 
-	.img-container {
-		border: 10px solid white;
-		/* Rectangle 5 Copy 4: */
-		background: #EDEDED;
-		border: 21px solid #FFFFFF;
-		width: 700px;
-		height: 450px;
-		margin-left: 0;
-		margin-top: 2rem;
+			.img-container {
+				width: auto;
+				height: 100%;
+			}
 
-		@media screen and (max-width: 480px){
-			border: none;
-		}
-	}
-
-	.text-container {
-		position: absolute;
-		right: 0;
-		background-color: #2828E9;
-		width: 250px;
-		height: 250px;
-		padding: 1.5rem;
-		border: 1px solid white;
-		top: 25%;
-
-		.title {
-			/* YIBU: */
-			font-family: Roboto Mono;
-			font-weight: 700;
-			font-size: 28px;
-			color: #FFFFFF;
-			letter-spacing: 0;
-			text-align: left;
-		}
-
-		.paragraph {
-			font-family: Roboto Mono;
-			font-weight: 300;
-			font-size: 22px;
-			color: #FFFFFF;
-			letter-spacing: 0;
-			text-align: left;
-			margin-top: 0.6rem;
-		}
-
-		.link {
-			width: 50px;
-			height: 50px;
-			border-radius: 25px;
-			background-color: white;
-			color: #2828E9;
-			display: block;
-			position: absolute;
-			bottom: 1.5rem;
-			margin: auto;
-			transform: translateX(-50%);
-			left: 50%;
-			font-size: 3rem;
-			text-decoration: none;
-			line-height: 42px;
-			transition: all 0.3s;
-
-			&:hover {
-				box-shadow: 10px 10px black;
+			.video-container {
+				height: 100%;
+				width: auto;
 			}
 		}
 	}
+}
+
+.card {
+	margin-bottom: 60px;
+	padding: 0px;
+	border: 0px;
+	overflow: hidden;
+	cursor: pointer;
+	display: flex;
+
+	.image {
+		width: 100%;
+		height: 100%;
+	}
+
+	.card-overlay {
+		position: absolute;
+		top: 0px;
+		height: 100%;
+		overflow: hodden;
+
+		&:hover{
+			.title{
+				height: 60%;
+			}
+		}
+		.title {
+			padding: 20px;
+			font-weight: bold;
+			color:@deep-blue;
+			height: 100%;
+			transition: all .5s;
+		}
+
+		.description {
+			color: @white;
+			background-color: @deep-blue;
+			padding: 20px;
+			height: 40%
+		}
+	}
+}
+
+.hidden-half-card {
+	min-height: 160px;
 }
 
 .background-image {
@@ -312,8 +388,7 @@ section.fullpage {
 	letter-spacing: 0;
 	text-shadow: 5px 5px 0 #2828E9;
 	display: inline-block;
-
-	@media screen and (max-width: 480px){
+	@media screen and (max-width: 480px) {
 		font-size: 128px;
 	}
 }
@@ -325,8 +400,7 @@ section.fullpage {
 	font-size: 28px;
 	color: #000000;
 	letter-spacing: 0;
-
-	@media screen and (max-width: 480px){
+	@media screen and (max-width: 480px) {
 		font-size: 28px;
 		margin-top: 3rem;
 	}
@@ -334,10 +408,128 @@ section.fullpage {
 	.big {
 		font-size: 48px;
 		color: black;
-
-		@media screen and (max-width: 480px){
+		@media screen and (max-width: 480px) {
 			font-size: 30px;
+		}
+	}
+}
 
+
+
+
+
+
+
+button {
+  display: block;
+  padding: 0.375rem 0.55rem;
+  height: 2rem;
+  width: 100%;
+  border: none;
+  background: #e5e5e5;
+  cursor: pointer;
+}
+
+button:focus, button:hover {
+  background: #ddd;
+}
+
+
+/*
+ * DEPENDANCIES (IF USING TYPEAHEAD SELECTS):
+ * - Selectize (https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.3/css/selectize.css)
+ ----------------------------------------------------------------------- */
+
+/* COMPONENT STYLES START HERE */
+.fp-form, .fp-form * {
+  box-sizing: border-box;
+}
+
+.fp-form [type='text'], .fp-form [type='password'], .fp-form [type='date'], .fp-form [type='datetime'], .fp-form [type='datetime-local'], .fp-form [type='month'], .fp-form [type='week'], .fp-form [type='email'], .fp-form [type='number'], .fp-form [type='search'], .fp-form [type='tel'], .fp-form [type='time'], .fp-form [type='url'], .fp-form [type='color'], .fp-form textarea, .fp-form select {
+  display: block;
+  width: 100%;
+  margin: 0 0 40px;
+  padding: 5px 20px;
+  border: 0px solid #ccc;
+  background: transparent;
+  font-family: inherit;
+  font-size: 28px;
+  transition: all 0.14s ease-out;
+  outline: none;
+	border-bottom: 2px solid white;
+	color: white;
+	height: 50px;
+
+}
+
+
+
+/* FLOATING LABELS STYLES */
+.fp-row {
+  position: relative;
+}
+
+.js .fp-floating-label {
+  position: absolute;
+  left: 0.5rem;
+  top: 10px;
+  display: inline-block;
+  padding: 0 0.1rem;
+  line-height: 1;
+  cursor: text;
+  transition: all 300ms cubic-bezier(0.23,1,0.32,1);
+  z-index: 2;
+  color: @white;
+}
+
+.js .fp-floating-label--select {
+  cursor: default;
+}
+
+.js .fp-floating-label--focused, .js .fp-floating-label--valued {
+  font-size: 0.8rem;
+  color: white;
+  transform: translateY(-200%);
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px @deep-blue inset;
+		background-color: @deep-blue;
+		-webkit-text-fill-color: white !important;
+
+}
+
+button.submit{
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-family: Roboto Mono;
+	font-size: 28px;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+}
+
+
+.footer{
+	color: white;
+	padding: 80px 0px;
+	.awesome-team{
+		display: block;
+		bottom: 0px;
+		text-align: right;
+		position: absolute;
+		right: 0px;
+		.txt{
+			display: inline-block;
+		}
+		img{
+			display: inline-block;
+			margin: 0px 10px -11px;
+			transition: transform .3s;
+			&:hover{
+				transform: rotate(90deg) scale(1.3);
+			}
 		}
 	}
 }

@@ -1,48 +1,55 @@
-<section class="fullpage bg-light-grey">
+<section class="fullpage nopadding bg-light-grey">
 
-	<div class="center-container">
-		<div class="container">
+	<div class="portfolio-carousel">
 
-			<div class="portfolio-title">
-				We worked on future toys, the first open source connect home and more secret stuff.
-			</div>
+		{{ range where .Data.Pages "Section" "portfolio" }}
+
+		<div class="slide fullpage">
+
+				{{ if eq .Params.bannertype "video"}}
+					<div class="img-container responsive-background-video" data-aos="slide-up">
+						{{ partial "responsiveBackgroundVideo" (dict "video" .Params.banner ) }}
+					</div>
+				{{end}}
+
+				{{ if eq .Params.bannertype "photo"}}
+					<div class="img-container responsive-background-image" data-aos="slide-up">
+						{{ partial "responsiveBackgroundImage" (dict "imageName" .Params.banner ) }}
+					</div>
+				{{end}}
+
+				<!-- <div class="text-container" data-aos="slide-up" data-aos-delay=100>
+					<div class="title">
+						{{.Title}}
+					</div>
+					<div class="paragraph">
+						{{.Params.shortParagraph}}
+					</div>
+					<a href="{{.Params.link}}" target="_blank" class="link">+</a>
+				</div> -->
 
 		</div>
 
-		<div class="portfolio-carousel">
-
-			{{ range where .Data.Pages "Section" "portfolio" }}
-
-			<div class="slide">
-				<div class="container">
-
-					{{ if eq .Params.bannertype "video"}}
-						<div class="img-container responsive-background-video" data-aos="slide-up">
-							{{ partial "responsiveBackgroundVideo" (dict "video" .Params.banner ) }}
-						</div>
-					{{end}}
-
-					{{ if eq .Params.bannertype "photo"}}
-						<div class="img-container responsive-background-image" data-aos="slide-up">
-							{{ partial "responsiveBackgroundImage" (dict "imageName" .Params.banner ) }}
-						</div>
-					{{end}}
-
-					<div class="text-container" data-aos="slide-up" data-aos-delay=100>
-						<div class="title">
-							{{.Title}}
-						</div>
-						<div class="paragraph">
-							{{.Params.shortParagraph}}
-						</div>
-						<a href="{{.Params.link}}" target="_blank" class="link">+</a>
+		{{end}}
+	</div>
+	<div class="overlay">
+		<div class="v-center">
+			<div class="container">
+				<div class="row">
+					<div class="span-12">
+							<h1 class="padded-multiline bg-white with-shadow" data-aos="slide-up">
+								We worked on future toys, the
+							</h1>
+							<h1 class="padded-multiline bg-white with-shadow" data-aos="slide-up">
+								first open source connect home
+							</h1>
+							<h1 class="padded-multiline bg-white with-shadow" data-aos="slide-up">
+								and more secret stuff.
+							</h1>
 					</div>
-
 				</div>
 			</div>
-
-			{{end}}
 		</div>
-
 	</div>
+
 </section>

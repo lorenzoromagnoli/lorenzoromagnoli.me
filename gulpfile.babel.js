@@ -38,12 +38,15 @@ gulp.task("build-preview", ["less","copyassets","images","copyVideo", "js"], (cb
 gulp.task('copyassets', function() {
 	gulp.src('./src/css/**/*')
 		.pipe(gulp.dest('./dist/css'));
+	gulp.src('./assets/**.*')
+			.pipe(gulp.dest('./dist/assets'));
 });
 
 gulp.task('copyVideo', function() {
 	gulp.src('./vid/**.*')
 		.pipe(gulp.dest('./dist/assets/video'));
 });
+
 
 
 gulp.task('less', function () {
@@ -79,7 +82,7 @@ gulp.task('images', function() {
 			'*': [{
 					rename: {
 						suffix: ''
-					},	
+					},
 				},{
 					width: 100,
 					withoutEnlargement: false,
@@ -130,6 +133,7 @@ gulp.task("server", ["hugo", "less", "js"], () => {
 	gulp.watch("./src/less/**/*.less", ["less"]);
   gulp.watch("./site/**/*", ["hugo"]);
 	gulp.watch("./vid/**/*", ["copyVideo"]);
+	gulp.watch("./assets/**/*", ["copyassets"]);
 	gulp.watch("./img/**/*", ["images"]);
 
 });
