@@ -17,6 +17,9 @@ var Snap = require("imports-loader?this=>window,fix=>module.exports=0!snapsvg/di
 
 $(document).ready(function() {
 
+	//check the highlighted text title and split them
+	splitText();
+
 	//start the animation on scroll
 	AOS.init({
 		offset: 20,
@@ -408,6 +411,15 @@ function autosize(){
   },0);
 }
 
+var lineSystem={} ;
+
+function splitText(){
+	var splitted = $('.padded-multiline-container').wraplines();
+	var opts = $('.padded-multiline-container').data();
+
+	  $('.padded-multiline-container  span').addClass('extra');
+	  $('.padded-multiline-container').removeClass('init');
+}
 
 
 function shiftTextAnimation(){
@@ -425,3 +437,60 @@ function shiftTextAnimation(){
 		$('#loop').toggleClass('rotate',false);
 	},500);
 }
+
+
+
+
+
+
+
+
+/*
+ * jQuery wraplines plugin
+ *
+ * Copyright (c) 2010 Paul Bennett (http://pmbennett.net)
+ * Licensed under the MIT License:
+ *   https://www.opensource.org/licenses/mit-license.php
+ *
+ */
+
+jQuery.fn.wraplines = function(options) {
+	var options = jQuery.extend({
+		lineWrap: 'span', //name of html element used to wrap lines
+		lineClassPrefix: 'wrap_line_', // prefix for class name to be added to line wrapper element
+		wordClassPrefix: 'w_line_',
+		index: 0,
+		offsetTop: 0,
+		offsetLeft: 0
+	}, options);
+	return this.each(function() {
+		options.index  = 0;
+		options.offset = 0;
+		var parentElm = $(this);
+		var elmText = $(parentElm).text();
+		$(parentElm).html(function(ind, htm) {
+			var $repText = '<' + options.lineWrap + '>' + elmText.replace( /\s/g, '</' + options.lineWrap + '> <' + options.lineWrap + '>');
+			$repText = $repText + '</' + options.lineWrap + '>';
+			return $repText;
+		});
+		$(options.lineWrap, parentElm).each(function() {
+			var spanOffset = $(this).offset();
+			if (spanOffset.top > options.offsetTop) {
+				options.offsetTop = spanOffset.top;
+				options.index++;
+			}
+			$(this).addClass(options.wordClassPrefix + options.index);
+		});
+		for (var x = 1; x <= options.index; x++) {
+			$('.' + options.wordClassPrefix + x, parentElm)
+			.wrapAll('<' + options.lineWrap + ' class="line ' + options.lineClassPrefix + x + '" />')
+			.append(" ");
+			var innerText = $('.' + options.lineClassPrefix + x, parentElm).text();
+			$('.' + options.lineClassPrefix + x, parentElm).html(function() {
+				return innerText;
+			});
+		lineSystem.index=options.index
+
+    }
+	});
+};
