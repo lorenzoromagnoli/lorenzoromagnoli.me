@@ -19,11 +19,11 @@
 					})(document.documentElement);
 				</script>
 
-				<form class="fp-form" data-aos="slide-up">
+				<form id="contact-form" name="contact" class="fp-form" data-aos="slide-up" method="POST" netlify>
 
 					<div class="fp-row">
 						<label class="fp-floating-label" for="fpFirstName">Name</label>
-						<input type="text" name="first-name" id="fpFirstName" required data-store />
+						<input type="text" name="name" id="fpFirstName" required data-store />
 					</div>
 
 					<div class="fp-row">
@@ -33,7 +33,7 @@
 
 					<div class="fp-row">
 						<label class="fp-floating-label" for="fpNotes">Message</label>
-						<textarea name="notes" id="fpNotes" required data-store></textarea>
+						<textarea name="message" id="fpNotes" required data-store></textarea>
 					</div>
 
 					<button type="submit" class="submit">GO!</button>
