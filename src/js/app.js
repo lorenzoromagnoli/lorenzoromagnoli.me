@@ -39,7 +39,6 @@ $(document).ready(function() {
 		//start the video on init, must stay before slick init
 		$('.portfolio-carousel').on('init', function(ev, el) {
 			$('video').each(function() {
-				console.log("video");
 				this.play();
 			});
 		});
@@ -65,8 +64,14 @@ $(document).ready(function() {
 	//this is for the changing textAnimation;
 	setInterval(shiftTextAnimation, 2000);
 
+	var antefact = new Audio('/assets/antefact.mp3');
+
+	$('.playSound').click(function(){
+		event.preventDefault();
+		antefact.play();	})
 
 });
+
 
 //require 'snapsvg/dist/snap.svg';
 //
