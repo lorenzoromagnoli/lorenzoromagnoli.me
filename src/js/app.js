@@ -59,6 +59,8 @@ $(document).ready(function() {
 		$('#hero .wtf').toggleClass('expanded');
 	})
 
+	//this is for the changing textAnimation;
+	setInterval(shiftTextAnimation, 2000);
 
 
 });
@@ -404,4 +406,22 @@ function autosize(){
     // el.style.cssText = '-moz-box-sizing:content-box';
     el.style.cssText = 'height:' + el.scrollHeight + 'px';
   },0);
+}
+
+
+
+function shiftTextAnimation(){
+
+	var listLength=$('.changing-text ul li').length;
+	var offset=parseInt($('.changing-text ul').css('margin-top'));
+	if (offset<(listLength-1)*-60){
+		offset=0
+	}
+
+	$('.changing-text ul').css('margin-top',offset-60+'px');
+
+	$('#loop').toggleClass('rotate',true);
+	setTimeout(function(){
+		$('#loop').toggleClass('rotate',false);
+	},500);
 }
