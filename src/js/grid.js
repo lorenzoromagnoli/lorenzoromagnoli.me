@@ -68,7 +68,7 @@ Text.prototype = {
 	animate: function(contents) {
 
 		if (this.text.currentIndex == 1 || this.text.currentIndex == 5 || this.text.currentIndex == 9) {
-			this.text.fillColor = '#0000FF';
+			this.text.fillColor = '#2828E9';
 		} else {
 			this.text.fillColor = '#ADADAD';
 		}
