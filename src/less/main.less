@@ -16,7 +16,6 @@ html {
 		line-height: 39px;
 		font-size: 22px;
 		margin: 0;
-
 		@media screen and (max-width: 480px) {
 			font-size: 18px;
 		}
@@ -31,7 +30,6 @@ h1 {
 	font-size: 28px;
 	line-height: 40px;
 	margin: 0;
-
 	@media screen and (max-width: 480px) {
 		font-size: 22px;
 	}
@@ -42,26 +40,24 @@ h1 {
 	font-weight: bold;
 }
 
-.padded-multiline-container{
+.padded-multiline-container {
 	font-size: 22px;
 	font-weight: 500;
 
-	&.init{
+	&.init {
 		padding: 0 20px;
 	}
 
-	.extra{
+	.extra {
 		margin-top: 0;
 		height: 40px;
 		padding: 0 20px;
 		display: inline-block;
 		margin-bottom: 20px;
-			box-shadow: 4px 4px black;
-			background-color: white;
-
+		box-shadow: 4px 4px black;
+		background-color: white;
 	}
 }
-
 
 .with-shadow {
 	box-shadow: 4px 4px black;
@@ -87,8 +83,6 @@ a {
 	}
 }
 
-
-
 .container {
 	max-width: 937px;
 	margin: auto;
@@ -104,19 +98,17 @@ a {
 	}
 }
 
-.overlay-fullpage{
+.overlay-fullpage {
 	padding-top: 8rem;
-
 }
 
 section.fullpage {
 	padding-top: 8rem;
-
 	height: 100vh;
-		position: relative;
+	position: relative;
 	overflow: hidden;
 
-	&.auto-height-mobile{
+	&.auto-height-mobile {
 		@media screen and (max-width: 480px) {
 			height: auto;
 			padding: 80px 0 !important;
@@ -132,7 +124,6 @@ section.fullpage {
 		}
 	}
 
-
 	&.auto-height {
 		height: auto;
 	}
@@ -147,6 +138,10 @@ section.fullpage {
 		top: 0;
 		left: 0;
 		width: 100%;
+		//height: 100%;
+	}
+
+	.fullHeight {
 		height: 100%;
 	}
 	@media screen and (max-width: 480px) {
@@ -261,7 +256,6 @@ section.fullpage {
 		font-weight: normal;
 		line-height: normal;
 		font-size: 28px;
-
 		@media screen and (max-width: 480px) {
 			font-size: 20px;
 		}
@@ -341,7 +335,6 @@ section.fullpage {
 		&.fullpage {
 			height: 100vh;
 
-
 			.img-container {
 				width: auto;
 				height: 100%;
@@ -352,8 +345,89 @@ section.fullpage {
 				width: auto;
 			}
 		}
+
+		.caption {
+			position: relative;
+			bottom: 120px;
+			width: 100%;
+			left: 0;
+
+			.title {
+				color: @white;
+				font-weight: 800;
+				text-transform: uppercase;
+				font-size: 20px;
+				text-align: center;
+				letter-spacing: 10px;
+				width: 100%;
+
+				a {
+					color: white;
+					position: relative;
+					display: block;
+					width: auto;
+					text-align: center;
+					text-decoration: none;
+					width: 100%;
+
+
+					&:after {
+						content: "read More >";
+						font-size: 10px;
+						padding: 0px;
+						color: black;
+						width: 0px;
+						line-height: 12px;
+						height: 12px;
+						background-color: white;
+						top: 40px;
+						position: absolute;
+						display: block;
+						transition: all .2s;
+						text-align: center;
+						overflow: hidden;
+						box-shadow: 4px 4px black;
+						margin: 0 auto;
+					}
+
+					&:hover {
+						&:after{
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
 	}
 }
+
+.navigation-container{
+	height: 80px;
+	position: absolute;
+    top: 50%;
+	left: 0px;
+	width: 100%;
+
+	.next-arrow{
+		height: 60px;
+		width: 60px;
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		display: block;
+		background-image: url('/assets/arrow.svg');
+		background-size: cover;
+		color: transparent;
+		border-radius: 33px;
+		box-shadow: 0px 0px transparent;
+		transition: box-shadow .2s;
+		cursor: pointer;
+		&:hover{
+			box-shadow: 4px 4px black;
+		}
+	}
+}
+
 
 .card {
 	margin-bottom: 60px;
@@ -417,14 +491,14 @@ section.fullpage {
 	background-position: center center;
 }
 
-.responsive-background-video{
+.responsive-background-video {
 	width: 100%;
-	.background-video{
+
+	.background-video {
 		height: 100%;
 		margin: 0 auto;
 	}
 }
-
 // .responsive-background-video {
 // 	max-width: 100%;
 // 	overflow: hidden;
@@ -595,7 +669,6 @@ button.submit {
 		text-align: right;
 		position: absolute;
 		right: 0;
-
 		@media screen and (max-width: 480px) {
 			text-align: left;
 			position: relative;
@@ -618,19 +691,17 @@ button.submit {
 	}
 }
 
-.col{
+.col {
 	position: relative;
 }
-.iteration-animation {
 
+.iteration-animation {
 	text-align: center;
 	width: 100%;
 	position: relative;
-
 	@media screen and (max-width: 480px) {
 		margin-top: 60px;
 	}
-
 
 	#loop {
 		// -webkit-animation: rotateAnimation 5s infinite;
@@ -641,19 +712,11 @@ button.submit {
 		// /* Opera 12+ */
 		// animation: rotateAnimation 5s infinite;
 		// /* IE 10+, Fx 29+ */
-
-
-		&.rotate{
-			transition: transform .5s;
-
+		&.rotate {
+			transition: transform 0.5s;
 			transform: rotate(180deg);
 		}
-
-
-
 	}
-
-
 
 	.changing-text {
 		position: absolute;
@@ -664,11 +727,13 @@ button.submit {
 		display: block;
 		margin: auto;
 		width: 100%;
+
 		ul {
-			padding: 0px;
+			padding: 0;
 			width: 100%;
-			transition: margin .5s;
-			margin-top: 0px;
+			transition: margin 0.5s;
+			margin-top: 0;
+
 			li {
 				height: 60px;
 				display: block;
@@ -680,11 +745,16 @@ button.submit {
 	}
 }
 
-.hidden{
+.reachout{
+	margin-top: 100px;
+	color: white;
+}
+
+.hidden {
 	display: none;
 }
 
-#paperjsAniamtion{
+#paperjsAniamtion {
 	width: 100%;
 	height: 100%;
 	background-color: @warm-grey;

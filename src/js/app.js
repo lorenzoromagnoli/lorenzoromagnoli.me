@@ -16,7 +16,9 @@ paper.install(window);
 
 import gridAnimation from './grid'
 
-var paperjsAniamtion= new gridAnimation();
+var paperjsAniamtion = new gridAnimation();
+
+
 
 $(document).ready(function() {
 
@@ -38,8 +40,11 @@ $(document).ready(function() {
 	//init the portfolio carousel in home;
 	$('.portfolio-carousel').slick({
 		'dots': true,
-		'autoplay': true
+		'autoplay': true,
+		'nextArrow': $('#next-arrow'),
+		'autoplaySpeed': 4000
 	});
+
 
 	//start loading the responsive_background_images
 	let elements = document.querySelectorAll('.responsive-background-image');
@@ -62,8 +67,12 @@ $(document).ready(function() {
 		antefact.play();
 	})
 
-	paperjsAniamtion.init();
+	$("#gotoabout").click(function(){
+		scrollToAnchor('#about');
+	})
 
+
+gotoabout
 });
 
 
@@ -129,6 +138,17 @@ function ie9InputFix() {
 		})(el));
 	}
 }
+
+
+function scrollToAnchor(aid) {
+	var aTag = $(aid);
+	console.log(aTag);
+	$('html,body').animate({
+		scrollTop: aTag.offset().top
+	}, 'slow');
+}
+
+
 
 function floatingLabels() {
 
