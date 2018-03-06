@@ -1,4 +1,4 @@
-console.log("🦊 Hello! Edit me in src/js/app.js");
+console.log("🤖 👋 👨‍👩");
 
 import jQuery from 'jquery';
 const $ = jQuery;
