@@ -67,7 +67,7 @@ $(document).ready(function() {
 	})
 
 	$("#gotoabout").click(function(){
-		scrollToAnchor('#about');
+		scrollToAnchor('#slide_2');
 	})
 
 	paperjsAniamtion.init();
