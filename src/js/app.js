@@ -19,7 +19,6 @@ import gridAnimation from './grid'
 var paperjsAniamtion = new gridAnimation();
 
 
-
 $(document).ready(function() {
 
 	//check the highlighted text title and split them
@@ -71,8 +70,9 @@ $(document).ready(function() {
 		scrollToAnchor('#about');
 	})
 
+	paperjsAniamtion.init();
 
-gotoabout
+
 });
 
 
