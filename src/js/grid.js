@@ -67,15 +67,16 @@ Text.prototype = {
 
 	animate: function(contents) {
 
-		if (this.text.currentIndex == 1 || this.text.currentIndex == 5 || this.text.currentIndex == 9) {
-			this.text.fillColor = '#2828E9';
-		} else {
-			this.text.fillColor = '#ADADAD';
-		}
 		if (this.text.currentIndex == contents.length - 1) {
 			this.text.currentIndex = 0;
 		} else {
 			this.text.currentIndex++;
+		}
+
+		if (this.text.currentIndex == 5 || this.text.currentIndex == 10 || this.text.currentIndex == 15) {
+			this.text.fillColor = '#2828E9';
+		} else {
+			this.text.fillColor = '#ADADAD';
 		}
 		this.text.content = contents[this.text.currentIndex];
 	}
