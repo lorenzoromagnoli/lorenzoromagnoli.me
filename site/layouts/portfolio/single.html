@@ -1,0 +1,109 @@
+{{ partial "header" . }} {{ partial "topBar" . }}
+
+
+
+<div class="container main">
+	<div class="row">
+
+		<div class="span-12 small-12 ">
+
+
+
+				<div class="img-container height-3">
+
+
+					{{ if (.Params.video) | or (eq .Params.video "") }}
+					<div class="videoWrapper">
+						<iframe src="{{.Params.video}}" width="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+					</div>
+					{{else}}
+
+					<div class="img-container responsive-background-image ">
+						{{ partial "responsiveBackgroundImage" (dict "imageName" .Params.img ) }}
+					</div>
+
+
+				 {{end}}
+				</div>
+
+				<h2 class="project-title">
+                            <span>{{ .Title }}</span>
+                        </h2>
+				<h4 class="project-subtitle">
+                            <span class=category>{{ .Params.category }}</span>
+                            :
+                            <span class=year>{{ .Params.year }}</span>
+
+                        </h4>
+
+				<div class="portfolio-content">
+
+					<div class="row">
+						<div class="col-lg-12 col-md-12 ">
+							<div class="description">
+								{{ .Content }}
+							</div>
+						</div>
+					</div>
+
+					<div class="row" id="gallery">
+						{{ range .Params.gallery}}
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<a href="{{ $.Site.BaseURL }}img/{{.img}}" class="light-link" data-sub-html=".caption">
+                                            <img src="{{ $.Site.BaseURL }}img/{{ replace .img "." "_small." }}" class="gallery-icon"></img>
+
+                                            <div class="caption" style="display:none">
+                                                {{if .caption }}
+                                                    <h4>{{.caption}}</h4>
+                                                {{end}}
+                                                {{if .desc }}
+                                                    <p>{{.desc}}</p>
+                                                {{end}}
+                                            </div>
+                                        </a>
+						</div>
+						{{ end }}
+					</div>
+
+					<div class="arrows">
+						{{if .PrevInSection}}
+						<a href="{{.PrevInSection.Permalink}}" class="arrow next">
+                                        <img src="{{.Site.BaseURL}}assets/arrow-right.svg" type="image/svg+xml">
+                                    </a> {{end}} {{if .NextInSection}}
+						<a href="{{.NextInSection.Permalink}}" class="arrow prev">
+                                        <img src="{{.Site.BaseURL}}assets/arrow-left.svg" type="image/svg+xml">
+                                    </a> {{end}}
+					</div>
+
+
+				</div>
+
+				<!-- <ul class="list-inline item-details">
+                            <li>
+                                {{ with $.Site.Params.portfolio.client }}{{.}}{{ end }}:
+                                <strong>
+                                    <a href="{{ .Params.clientLink }}">{{ .Params.client }}</a>
+                                </strong>
+                            </li>
+                            <li>
+                                {{ with $.Site.Params.portfolio.date }}{{.}}{{ end }}:
+                                <strong>
+                                    <a href="#">{{ .Params.date }}</a>
+                                </strong>
+                            </li>
+                            <li>
+                                {{ with $.Site.Params.portfolio.category }}{{.}}{{ end }}:
+                                <strong>
+                                    <a href="#">{{ .Params.category }}</a>
+                                </strong>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-default">
+                            <i class="fa fa-times"></i>
+                            {{ with $.Site.Params.portfolio.buttonText }}{{.}}{{ end }}
+                        </button> -->
+			</div>
+		</div>
+	</div>
+</div>
+{{ partial "footer.html" . }}
