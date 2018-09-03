@@ -309,6 +309,29 @@ section.fullpage {
 	background-color: white;
 }
 
+.portfolio-grid{
+	.portfolio-grid-item{
+		position: relative;
+		padding: 3%;
+
+		.portfolio-box-caption{
+			position: absolute;
+			width: 94%;
+			height: 94%;
+			padding: 0px;
+			top: 3%;
+
+			.portfolio-box-caption-content{
+				padding: 10px;
+			}
+
+			&:hover{
+				background-color: blue;
+			}
+		}
+	}
+}
+
 .portfolio-title {
 	/* We worked on future: */
 	font-family: Roboto Mono;
@@ -489,6 +512,8 @@ section.fullpage {
 .responsive-background-image {
 	background-size: cover !important;
 	background-position: center center;
+	height: 100%;
+
 }
 
 .responsive-background-video {

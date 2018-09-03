@@ -1,0 +1,74 @@
+<section class="fullpage nopadding bg-light-grey">
+
+	<div class="portfolio-carousel">
+
+		{{ range where .Data.Pages "Section" "portfolio" }}
+
+		<div class="slide fullpage">
+
+				{{ if eq .Params.bannertype "video"}}
+					<div class="img-container responsive-background-video" data-aos="slide-up">
+						{{ partial "responsiveBackgroundVideo" (dict "video" .Params.banner ) }}
+					</div>
+				{{end}}
+
+				{{ if eq .Params.bannertype "photo"}}
+					<div class="img-container responsive-background-image" data-aos="slide-up">
+						{{ partial "responsiveBackgroundImage" (dict "imageName" .Params.banner ) }}
+					</div>
+				{{end}}
+
+				<div class="caption">
+					<div class="container">
+						<div class="row">
+								<div class="center span-4">
+									<div class="title">
+										<a href="{{.Params.link}}">{{.Title}}</a>
+
+									</div>
+								</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- <div class="text-container" data-aos="slide-up" data-aos-delay=100>
+
+					<div class="paragraph">
+						{{.Params.shortParagraph}}
+					</div>
+					<a href="{{.Params.link}}" target="_blank" class="link">+</a>
+				</div> -->
+
+		</div>
+
+		{{end}}
+	</div>
+	<div class=" overlay overlay-fullpage">
+			<div class="container">
+				<div class="row">
+					<div class="span-8 mobile-12">
+						<div class="padded-multiline-container init" data-aos="slide-up">We worked on <a href="">future toys</a>, connected airmasks, the first open source smart home and more secret stuff.
+
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+	</div>
+
+	<div class="navigation-container">
+		<div class="container">
+			<div class="next-arrow" id="next-arrow">
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+</section>

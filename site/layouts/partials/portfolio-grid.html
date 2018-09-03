@@ -1,0 +1,30 @@
+<section id="portfolio" class="portfolio-grid">
+    <div class="container">
+        <div class="row no-gutter">
+					{{ range where .Data.Pages "Section" "portfolio" }}
+            <div class="span-{{.Params.size}} small-{{.Params.size}} portfolio-grid-item height-{{.Params.height}}">
+                    <!-- <img src="img/{{ replace .Params.img "." "_cover." }}" class="img-responsive" alt=""></img> -->
+										<div class="img-container responsive-background-image " data-aos="slide-up">
+
+										{{ partial "responsiveBackgroundImage" (dict "imageName" .Params.img ) }}
+</div>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category">
+                              <span>
+                                {{ .Params.category }}
+                              </span>
+                            </div>
+                            <div class="project-name">
+                              <span>
+                                {{ .Title }}
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

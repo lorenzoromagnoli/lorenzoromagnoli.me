@@ -233,99 +233,99 @@ for (var i = advSelects.length - 1; i >= 0; i--) {
 	})($select);
 }
 
-
-/*
- * FORM EXPAND
- ----------------------------------------------------------------------- */
-// Which transition event?
-// by David Walsh: http://davidwalsh.name/css-animation-callback
-var transitionEnd = (function() {
-	var el = document.createElement('fakeelement');
-	var transitions = {
-		'transition': 'transitionend',
-		'OTransition': 'oTransitionEnd',
-		'MozTransition': 'transitionend',
-		'WebkitTransition': 'webkitTransitionEnd'
-	}
-
-	for (var t in transitions) {
-		if (el.style[t] !== undefined) {
-			return transitions[t];
-		}
-	}
-
-	return 'transitionend';
-})();
-
-
-
-/*
- * STORE FORM VALUES IN LOCAL STORAGE
- * Mark fields to be stored by adding the 'data-store' attribute
- ----------------------------------------------------------------------- */
-function storeFields(form) {
-
-	var storedFields = [].slice.call(form.querySelectorAll('[data-store]'));
-
-	storedFields.forEach(function(field) {
-
-		var value;
-
-		if (field.type === 'radio' || field.type === 'checkbox') {
-			value = field.checked ? '1' : '0';
-		} else {
-			value = field.value;
-		}
-
-		window.localStorage.setItem(field.id, value);
-
-	});
-
-}
-
-function setStoredFields() {
-
-	var storedFields = [].slice.call(document.querySelectorAll('[data-store]'));
-
-	storedFields.forEach(function(field) {
-
-		var stored = window.localStorage.getItem(field.id);
-
-		if (stored) {
-			if (field.type === 'radio' || field.type === 'checkbox') {
-				field.checked = !!stored;
-			} else {
-				field.value = stored;
-
-				// special case for selectize
-				if (field.selectize) {
-					field.selectize.addItem(stored);
-				}
-			}
-			var event = document.createEvent('HTMLEvents');
-			event.initEvent('input', true, false);
-			field.dispatchEvent(event);
-		}
-
-	});
-
-}
-
-// fill form on page load
-setStoredFields();
-
-// [EXAMPLE] Save values on form submit
-var form = document.querySelector('.fp-form');
-form.addEventListener('submit', function(event) {
-	event.preventDefault();
-	storeFields(form);
-});
-
+//
+// /*
+//  * FORM EXPAND
+//  ----------------------------------------------------------------------- */
+// // Which transition event?
+// // by David Walsh: http://davidwalsh.name/css-animation-callback
+// var transitionEnd = (function() {
+// 	var el = document.createElement('fakeelement');
+// 	var transitions = {
+// 		'transition': 'transitionend',
+// 		'OTransition': 'oTransitionEnd',
+// 		'MozTransition': 'transitionend',
+// 		'WebkitTransition': 'webkitTransitionEnd'
+// 	}
+//
+// 	for (var t in transitions) {
+// 		if (el.style[t] !== undefined) {
+// 			return transitions[t];
+// 		}
+// 	}
+//
+// 	return 'transitionend';
+// })();
+//
+//
+//
+// /*
+//  * STORE FORM VALUES IN LOCAL STORAGE
+//  * Mark fields to be stored by adding the 'data-store' attribute
+//  ----------------------------------------------------------------------- */
+// function storeFields(form) {
+//
+// 	var storedFields = [].slice.call(form.querySelectorAll('[data-store]'));
+//
+// 	storedFields.forEach(function(field) {
+//
+// 		var value;
+//
+// 		if (field.type === 'radio' || field.type === 'checkbox') {
+// 			value = field.checked ? '1' : '0';
+// 		} else {
+// 			value = field.value;
+// 		}
+//
+// 		window.localStorage.setItem(field.id, value);
+//
+// 	});
+//
+// }
+//
+// function setStoredFields() {
+//
+// 	var storedFields = [].slice.call(document.querySelectorAll('[data-store]'));
+//
+// 	storedFields.forEach(function(field) {
+//
+// 		var stored = window.localStorage.getItem(field.id);
+//
+// 		if (stored) {
+// 			if (field.type === 'radio' || field.type === 'checkbox') {
+// 				field.checked = !!stored;
+// 			} else {
+// 				field.value = stored;
+//
+// 				// special case for selectize
+// 				if (field.selectize) {
+// 					field.selectize.addItem(stored);
+// 				}
+// 			}
+// 			var event = document.createEvent('HTMLEvents');
+// 			event.initEvent('input', true, false);
+// 			field.dispatchEvent(event);
+// 		}
+//
+// 	});
+//
+// }
+//
+// // fill form on page load
+// setStoredFields();
+//
+// // [EXAMPLE] Save values on form submit
+// var form = document.querySelector('.fp-form');
+// form.addEventListener('submit', function(event) {
+// 	event.preventDefault();
+// 	storeFields(form);
+// });
+//
 
 //auto height textarea
-var textarea = document.querySelector('textarea');
-
-textarea.addEventListener('keydown', autosize);
+// var textarea = document.querySelector('textarea');
+//
+// textarea.addEventListener('keydown', autosize);
 
 function autosize() {
 	console.log("resizing");
