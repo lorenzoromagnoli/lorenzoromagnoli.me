@@ -2,7 +2,8 @@
 weight: 4
 title: "Colors"
 year: 2012
-img: colors.png
+bannertype: image
+banner: colors.png
 client: Start Bootstrap
 clientLink: "#"
 size: 4

@@ -2,7 +2,8 @@
 weight: 5
 title: "Arduino Cloud"
 year: 2016
-img: cloud.png
+bannertype: image
+banner: cloud.png
 client: Start Bootstrap
 clientLink: "#"
 size: 12

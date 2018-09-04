@@ -1,7 +1,8 @@
 ---
 weight: 11
 title: "SPARK"
-img: spark.png
+bannertype: image
+banner: spark.png
 client: Start Bootstrap
 clientLink: "#"
 year: 2016

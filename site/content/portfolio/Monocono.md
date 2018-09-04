@@ -1,7 +1,8 @@
 ---
 weight: 3
 title: "Monocono"
-img: monocono.png
+bannertype: image
+banner: monocono.png
 client: Start Bootstrap
 clientLink: "#"
 year: 2016

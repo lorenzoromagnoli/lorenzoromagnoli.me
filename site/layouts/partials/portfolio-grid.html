@@ -4,9 +4,18 @@
 			{{ range where .Data.Pages "Section" "portfolio" }}
 			<div class="span-{{.Params.size}} small-{{.Params.size}} portfolio-grid-item height-{{.Params.height}}" data-aos="slide-up">
 				<!-- <img src="img/{{ replace .Params.img "." "_cover." }}" class="img-responsive" alt=""></img> -->
-				<div class="img-container responsive-background-image ">
-					{{ partial "responsiveBackgroundImage" (dict "imageName" .Params.img ) }}
-				</div>
+
+				{{ if eq .Params.bannertype "video"}}
+					<div class="img-container responsive-background-video" >
+						{{ partial "responsiveBackgroundVideo" (dict "video" .Params.banner ) }}
+					</div>
+				{{end}}
+
+				{{ if eq .Params.bannertype "image"}}
+					<div class="img-container responsive-background-image ">
+						{{ partial "responsiveBackgroundImage" (dict "imageName" .Params.banner ) }}
+					</div>
+				{{end}}
 
 				<div class="portfolio-box-caption">
 					<a href="{{.Permalink}}" >

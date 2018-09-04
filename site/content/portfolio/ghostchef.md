@@ -1,12 +1,13 @@
 ---
-weight: 10
-title: "Wink"
+weight: -1
+title: "Ghostchef"
 year: 2017
-img: http://ghostchef.bitsxbites.com/img/ghostchef/co-write_2.gif
+bannertype: video
+banner: ghostchef-sliders.webm
 client: bitsxbites
 clientLink: "http://ghostchef.bitsxbites.com/"
-size: 4
-height: 2
+size: 12
+height: 3
 category: product service
 gallery:
   - 1:
@@ -20,5 +21,5 @@ gallery:
   - 5:
     img: wink5.jpg
 
-video: https://player.vimeo.com/video/58027624
+video:
 ---

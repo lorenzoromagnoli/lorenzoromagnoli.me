@@ -1,7 +1,8 @@
 ---
 weight: 6
 title: "TINK"
-img: tink.png
+bannertype: image
+banner: tink.png
 client: Start Bootstrap
 clientLink: "#"
 year: 2016

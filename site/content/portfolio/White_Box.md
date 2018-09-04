@@ -2,7 +2,8 @@
 weight: 2
 title: "whitebox"
 year: 2016
-img: whitebox.jpg
+bannertype: image
+banner: whitebox.jpg
 client: Start Bootstrap
 clientLink: "#"
 size: 8

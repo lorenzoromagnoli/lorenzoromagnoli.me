@@ -1,7 +1,8 @@
 ---
 weight: 12
 title: "Digital Lathe"
-img: digitalLathe.jpg
+bannertype: image
+banner: digitalLathe.jpg
 client: Start Bootstrap
 year: 2011
 clientLink: "#"

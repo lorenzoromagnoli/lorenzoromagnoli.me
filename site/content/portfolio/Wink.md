@@ -2,7 +2,8 @@
 weight: 10
 title: "Wink"
 year: 2016
-img: wink.jpg
+bannertype: image
+banner: wink.jpg
 client: Start Bootstrap
 clientLink: "#"
 size: 4

@@ -36,6 +36,24 @@ $(document).ready(function() {
 		});
 	});
 
+
+	//adjust size of the videos in the portfolio grid1
+	if ($('.responsive-background-video').width() > $('.responsive-background-video .background-video').width()){
+		$('.responsive-background-video .background-video').css({
+				'width':'100%',
+				'height':'auto',
+				maxWidth:'none',
+				maxHeight:'none'
+		});
+	}else if($('.responsive-background-video').height() > $('.responsive-background-video .background-video').height()){
+		$('.responsive-background-video .background-video').css({
+					'height':'100%',
+					'width':'auto',
+					maxWidth:'none',
+					maxHeight:'none'
+			});
+	}
+
 	//init the portfolio carousel in home;
 	$('.portfolio-carousel').slick({
 		'dots': true,

@@ -2,11 +2,12 @@
 weight: 1
 title: "Casa Jasmina"
 year: Torino, 2014-2016
-img: casajasmina.jpg
+bannertype: image
+banner: casajasmina.jpg
 client: Start Bootstrap
 clientLink: "#"
-size: 12
-height: 3
+size: 8
+height: 2
 category: research
 gallery:
   - 1:
@@ -45,10 +46,13 @@ gallery:
 ---
 ### The open source way to the connected home
 
-Curated by Bruce Sterling, Massimo Banzi and Jasmina Teshanovich, ["Casa Jasmina"](http://casajasmina.arduino.cc) is an ongoing pilot project in the business space of domestic electronic networking, or, “the Internet of Things in the Home.” Our goal is to integrate traditional Italian skills in furniture and interior design with emergent skills in Italian open-source electronics.
+Curated by Bruce Sterling, Massimo Banzi and Jasmina Teshanovich, ["Casa Jasmina"](http://casajasmina.arduino.cc) is an ongoing pilot project in the business space of domestic electronic networking, or, “the Internet of Things in the Home.” The goal was to integrate traditional Italian skills in furniture and interior design with emergent skills in Italian open-source electronics.
 
 What is really relevant to people in a "connected home"? What's the real use of a connected washing machine or of a lamp that changes color? How can a connected experience enrich the life of the inhabitants of an apartment? What's the relevance of Open Source software, open hardware and open design in this space?
-Those where some of the question that kicked off the project in 2014 when I joined the team as coordinator and lead interaction designer.
+
+
+
+
 
 Casa Jasmina in the last two years has been an exceptionally fertile research hub and idea collector; many events, workshops, meetup, conferences, residencies have been organized to bring together companies, artists, designers and makers to discuss and envision the home of the future.
 
