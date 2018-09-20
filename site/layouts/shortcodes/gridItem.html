@@ -1,0 +1,56 @@
+<div class="span-{{ .Get "size" }} small-12 portfolio-grid-item height-{{ .Get "height" }} span-offset-{{ .Get "offset" }}" data-aos="slide-up">
+	<!-- <img src="img/{{ replace .Params.img "." "_cover." }}" class="img-responsive" alt=""></img> -->
+
+	{{ $.Scratch.Set "type" (.Get "type") }}
+	{{ $type := $.Scratch.Get "type" }}
+
+	{{ $.Scratch.Set "banner" (.Get "banner") }}
+	{{ $banner := $.Scratch.Get "banner" }}
+
+
+
+	{{ if eq $type "video"}}
+		<div class="img-container responsive-background-video" >
+			{{ partial "responsiveBackgroundVideo" (dict "video" $banner ) }}
+		</div>
+	{{end}}
+
+	{{ if eq $type "image"}}
+		<div class="img-container responsive-background-image ">
+			{{ partial "responsiveBackgroundImage" (dict "imageName" $banner ) }}
+		</div>
+	{{end}}
+
+	{{ if eq $type "text"}}
+	{{end}}
+
+	<div class="portfolio-box-caption" onclick="location.href='{{.Get "link"}}';" style="cursor:pointer;">
+		<div class="portfolio-box-caption-content">
+
+			<div>
+			<h1 class="project-name">
+				{{ .Get "title" }}
+			</h1>
+		</div>
+
+		<div>
+
+			<h2 class=" grid-sentence">
+				{{.Get "text" | markdownify}}
+			</h2>
+		</div>
+
+			<!-- <div class="project-category">
+				<span>
+					{{ .Get "categoty" }}
+				</span>
+			</div> -->
+
+			<!-- <div class="project-name">
+				<span>
+					{{ .Get "title" }}
+				</span>
+			</div> -->
+		</div>
+	</div>
+</div>

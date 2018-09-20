@@ -40,15 +40,15 @@ $(document).ready(function() {
 	//adjust size of the videos in the portfolio grid1
 	if ($('.responsive-background-video').width() > $('.responsive-background-video .background-video').width()){
 		$('.responsive-background-video .background-video').css({
-				'width':'100%',
-				'height':'auto',
+				'width':'auto',
+				'height':'100%',
 				maxWidth:'none',
 				maxHeight:'none'
 		});
 	}else if($('.responsive-background-video').height() > $('.responsive-background-video .background-video').height()){
 		$('.responsive-background-video .background-video').css({
-					'height':'100%',
-					'width':'auto',
+					'height':'auto',
+					'width':'100%',
 					maxWidth:'none',
 					maxHeight:'none'
 			});

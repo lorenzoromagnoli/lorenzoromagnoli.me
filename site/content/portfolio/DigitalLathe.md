@@ -10,6 +10,8 @@ size: 6
 height: 2
 category: product service
 video: http://www.youtube.com/embed/ikYDcDEey-E
+inShort: "Curated by Bruce Sterling, Massimo Banzi and Jasmina Teshanovich, ['Casa Jasmina'](http://casajasmina.arduino.cc) is an ongoing pilot project in the business space of domestic electronic networking, or, “the Internet of Things in the Home.” The goal was to integrate traditional Italian skills in furniture and interior design with emergent skills in Italian open-source electronics."
+
 ---
 Digital Lathe is a project that wants to highlight the potentiality offered by digital fabrication tools.
 It aims at giving the possibility to end user to design and produce a personalized object.
