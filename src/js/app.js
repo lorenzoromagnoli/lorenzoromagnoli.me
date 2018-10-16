@@ -1,7 +1,7 @@
 console.log("🤖 👋 👨‍👩");
 
-import jQuery from 'jquery';
-const $ = jQuery;
+
+import './jquery-global.js';
 
 import inView from 'in-view';
 
@@ -16,10 +16,14 @@ paper.install(window);
 
 import gridAnimation from './grid'
 
+import './jquery.splitlines.js'
+
+
 var paperjsAniamtion = new gridAnimation();
 
 
 $(document).ready(function() {
+
 
 	//check the highlighted text title and split them
 	splitText();

@@ -2,7 +2,7 @@
 @import (less) '../css/aos.css';
 @import (less) '../css/slick.css';
 @import (less) '../css/slick-theme.css';
-@import url( 'https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700'); //some color variables
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700'); //some color variables
 @deep-blue: #2828E9;
 @black: #000;
 @warm-grey: #e0e0e0;
@@ -25,13 +25,14 @@ html {
 h1 {
 	font-family: Roboto Mono;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: bold;
 	line-height: 55px;
-	font-size: 28px;
+	font-size: 32px;
 	line-height: 40px;
 	margin: 0;
 	display: inline;
 	background-color: white;
+	color: blue;
 	@media screen and (max-width: 480px) {
 		font-size: 22px;
 	}
@@ -43,7 +44,7 @@ h2 {
 	font-weight: 800;
 }
 
-.text-big{
+.text-big {
 	font-size: 24px;
 	line-height: 40px;
 }
@@ -75,7 +76,6 @@ h2 {
 .with-shadow {
 	box-shadow: 4px 4px black;
 }
-
 // .text-box {
 // 	padding: 20px;
 // 	box-decoration-break: clone;
@@ -323,30 +323,37 @@ section.fullpage {
 	background-color: white;
 }
 
-.portfolio-grid{
-	.portfolio-grid-item{
+.portfolio-grid {
+	.portfolio-grid-item {
 		position: relative;
+		border: 5px solid white;
+		margin-top: 10em;
+		margin-bottom: 10em;
 
-		border:5px solid white;
-		margin-top: 50px;
-
-		.portfolio-box-caption{
+		.portfolio-box-caption {
 			position: absolute;
 			height: 100%;
 			padding: 50px;
-			top: 0px;
+			top: 0;
 
-			.portfolio-box-caption-content{
+			&:hover {
+				.grid-sentence {
+					height: 50px;
+				}
+			}
+
+			.portfolio-box-caption-content {
 				//padding: 50px;
 			}
-			 .grid-sentence{
 
-				 padding: 0px;
-				     display: inline;
-				     background-color: white;			 }
+			.grid-sentence {
+				padding: 0;
+				display: inline;
+				background-color: white;
+			}
 
-			&:hover{
-			//	background-color: blue;
+			&:hover {
+				//	background-color: blue;
 			}
 		}
 	}
@@ -413,20 +420,19 @@ section.fullpage {
 					text-decoration: none;
 					width: 100%;
 
-
 					&:after {
 						content: "read More >";
 						font-size: 10px;
-						padding: 0px;
+						padding: 0;
 						color: black;
-						width: 0px;
+						width: 0;
 						line-height: 12px;
 						height: 12px;
 						background-color: white;
 						top: 40px;
 						position: absolute;
 						display: block;
-						transition: all .2s;
+						transition: all 0.2s;
 						text-align: center;
 						overflow: hidden;
 						box-shadow: 4px 4px black;
@@ -434,7 +440,7 @@ section.fullpage {
 					}
 
 					&:hover {
-						&:after{
+						&:after {
 							width: 100%;
 						}
 					}
@@ -444,51 +450,47 @@ section.fullpage {
 	}
 }
 
-
-.portfolio-single-header{
+.portfolio-single-header {
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
 
-.hero-image{
+.hero-image {
 	padding: 3em;
 }
 
-
-.navigation-container{
+.navigation-container {
 	height: 80px;
 	position: absolute;
-    top: 50%;
-	left: 0px;
+	top: 50%;
+	left: 0;
 	width: 100%;
 
-	.next-arrow{
+	.next-arrow {
 		height: 60px;
 		width: 60px;
 		position: absolute;
-		bottom: 0px;
-		right: 0px;
+		bottom: 0;
+		right: 0;
 		display: block;
-		background-image: url('/assets/arrow.svg');
+		background-image: url("/assets/arrow.svg");
 		background-size: cover;
 		color: transparent;
 		border-radius: 33px;
-		box-shadow: 0px 0px transparent;
-		transition: box-shadow .2s;
+		box-shadow: 0 0 transparent;
+		transition: box-shadow 0.2s;
 		cursor: pointer;
-		&:hover{
+
+		&:hover {
 			box-shadow: 4px 4px black;
 		}
 	}
 }
 
-
-
-.top-bar{
+.top-bar {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-
 
 .card {
 	margin-bottom: 60px;
@@ -551,31 +553,28 @@ section.fullpage {
 	background-size: cover !important;
 	background-position: center center;
 	height: 100%;
-
 }
 
 .responsive-background-video {
 	position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 
 	.background-video {
 		/* Make video to at least 100% wide and tall */
-	  max-width: 120%;
-	  max-height: 120%;
-
-	  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-	  width: auto;
-	  height: auto;
-
-	  /* Center the video */
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  transform: translate(-50%,-50%);
+		max-width: 120%;
+		max-height: 120%;
+		/* Setting width & height to auto prevents the browser from stretching or squishing the video */
+		width: auto;
+		height: auto;
+		/* Center the video */
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
 	}
 }
 // .responsive-background-video {
@@ -824,7 +823,7 @@ button.submit {
 	}
 }
 
-.reachout{
+.reachout {
 	margin-top: 100px;
 	color: white;
 }
