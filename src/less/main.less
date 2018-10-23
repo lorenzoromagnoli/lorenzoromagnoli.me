@@ -9,6 +9,8 @@
 @white: #fff;
 
 html {
+	background-color: #f8f8ff;
+
 	body {
 		font-family: Roboto Mono;
 		font-style: normal;
@@ -19,6 +21,18 @@ html {
 		@media screen and (max-width: 480px) {
 			font-size: 18px;
 		}
+	}
+}
+
+#interactive-layer{
+	z-index: -1;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+
+	#paperjsAniamtion{
+		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -116,11 +130,24 @@ a {
 	padding-top: 8rem;
 }
 
+.overlay{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: auto;
+}
+
 section.fullpage {
-	padding-top: 8rem;
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
+	width: 100%;
+
+	.center-wrapper{
+			top:50%;
+			transform:translateY(-50%);
+			position: relative;
+	}
 
 	&.auto-height-mobile {
 		@media screen and (max-width: 480px) {
@@ -325,25 +352,46 @@ section.fullpage {
 
 .portfolio-grid {
 	.portfolio-grid-item {
+		box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
 		position: relative;
 		border: 5px solid white;
-		margin-top: 10em;
-		margin-bottom: 10em;
+
+		&.text {
+			border: 0;
+
+
+			.portfolio-box-caption {
+				&:hover {
+					background-color: rgba(0,0,0,0);
+				}
+				.portfolio-box-caption-content {
+					padding: 0px;
+				}
+			}
+		}
 
 		.portfolio-box-caption {
 			position: absolute;
 			height: 100%;
-			padding: 50px;
 			top: 0;
+			width: 100%;
 
 			&:hover {
-				.grid-sentence {
-					height: 50px;
-				}
+				background-color: rgba(0,0,0,.2);
 			}
 
 			.portfolio-box-caption-content {
-				//padding: 50px;
+				padding: 50px;
+			}
+
+			.multiline {
+				background-color: white;
+				margin-top: 0.5em;
+				display: block;
+				width: fit-content;
+				padding: 0 10px;
 			}
 
 			.grid-sentence {
@@ -830,10 +878,4 @@ button.submit {
 
 .hidden {
 	display: none;
-}
-
-#paperjsAniamtion {
-	width: 100%;
-	height: 100%;
-	background-color: @warm-grey;
 }

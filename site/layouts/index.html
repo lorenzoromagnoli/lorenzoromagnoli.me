@@ -1,5 +1,8 @@
 {{ partial "header" . }}
-<!-- {{ partial "topBar" . }} -->
-{{ .Content }}
+ {{ partial "interactive-layer" . }}
+ <section class="overlay">
+	 {{ .Content }}
+ </div>
+
 <!-- {{ partial "portfolio-grid" . }} -->
 {{ partial "footer" . }}

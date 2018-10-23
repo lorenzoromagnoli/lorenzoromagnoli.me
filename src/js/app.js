@@ -24,9 +24,17 @@ var paperjsAniamtion = new gridAnimation();
 
 $(document).ready(function() {
 
-
-	//check the highlighted text title and split them
-	splitText();
+	$( '.splitText' ).each( function( index, element ){
+		var w= $(element).parents( ".portfolio-grid-item" ).width();
+		var p= $(element).parents( ".portfolio-box-caption-content" ).css('padding');
+		p=parseInt(p);
+		w-=2*p;
+	    $( this ).splitLines({
+					tag: '<div class="multiline">',
+		    width: w,
+		    keepHtml: true
+		})
+	});
 
 	//start the animation on scroll
 	AOS.init({
@@ -58,6 +66,8 @@ $(document).ready(function() {
 			});
 	}
 
+
+
 	//init the portfolio carousel in home;
 	$('.portfolio-carousel').slick({
 		'dots': true,
@@ -78,15 +88,15 @@ $(document).ready(function() {
 		$('#hero .wtf').toggleClass('expanded');
 	})
 
-	//this is for the changing textAnimation;
-	setInterval(shiftTextAnimation, 2000);
-
-	var antefact = new Audio('/assets/antefact.mp3');
-
-	$('.playSound').click(function() {
-		event.preventDefault();
-		antefact.play();
-	})
+	// //this is for the changing textAnimation;
+	// setInterval(shiftTextAnimation, 2000);
+	//
+	// var antefact = new Audio('/assets/antefact.mp3');
+	//
+	// $('.playSound').click(function() {
+	// 	event.preventDefault();
+	// 	antefact.play();
+	// })
 
 	$("#gotoabout").click(function(){
 		scrollToAnchor('#slide_2');

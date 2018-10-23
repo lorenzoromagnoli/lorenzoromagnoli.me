@@ -4,14 +4,38 @@ weight: 5
 
 {{< portfolioGrid >}}
 
-{{< gridItem size="12" height="1" offset="0" type="text" text="Hello! <br/> This is Lorenzo Romagnoli. <br/> I design and prototype interactive experiences. ">}}
+	{{< fullpage >}}
+		{{< gridItem size="12" height="1" offset="0" type="text" text="Hi! 👋  <br/> I'm Lorenzo Romagnoli 👨‍💻<br/> I design and prototype interactive experiences 🤖. <br/> <br/> Scroll 👇 for projects">}}
+	{{< /fullpage >}}
 
- {{< gridItem size="12" height="3" offset="0" type="video" title="Ghostchef" banner="ghostchef-sliders.webm" link="/portfolio/ghostchef" text=" An experiment on how to bring Artificial intelligence into the kitchen">}}
+	{{< fullpage >}}
+	 	{{< gridItem size="12" height="3" offset="0" type="video" title="Ghostchef" banner="ghostchef-sliders.webm" link="/portfolio/ghostchef" text=" An experiment on how to bring Artificial intelligence into the kitchen">}}
+	 {{< /fullpage >}}
+
+	{{< fullpage >}}
+		{{< gridItem size="10" height="3" offset="2" type="image" title="Objective Realities" banner="or.jpg" link="/portfolio/ghostchef" text="Experience life from the perspective of things.">}}
+	{{< /fullpage >}}
+
+	{{< fullpage >}}
+		{{< gridItem size="7" height="2" offset="1" type="video" title="Microbit.js" banner="microbitjs.webm" link="/portfolio/ghostchef" text="A javascript library connect to BBC micro:bit in the browser">}}
+	{{< /fullpage >}}
+
+	{{< fullpage >}}
+		{{< gridItem size="12" height="2" offset="0" type="image" title="Casa Jasmina" banner="casajasmina.jpg" link="/portfolio/ghostchef" text="Researching the open source way to connected home">}}
+	{{< /fullpage >}}
+
+	{{< fullpage >}}
+		{{< gridItem size="10" height="2" offset="2" type="image" title="The whitebox" banner="whitebox.jpg" link="/portfolio/ghostchef" text="A transparent interface to tweak your smart home logic">}}
+	{{< /fullpage >}}
+
+	{{< fullpage >}}
+		{{< gridItem size="10" height="3" offset="0" type="image" title="Monocono" banner="monocono.png" link="/portfolio/ghostchef" text="A do-it-yourself kinetic and programmed artwork">}}
+	{{< /fullpage >}}
+
+	{{< fullpage >}}
+		{{< gridItem size="12" height="1" offset="0" type="text" text="I often teach and run workshops,<br> For work in progress, and live updates you can follow me on  [Twitter](https://twitter.com/10r3n20) and [Instagram](https://www.instagram.com/10r3n20/) ">}}
+	{{< /fullpage >}}
 
 
- {{< gridItem size="10" height="3" offset="2" type="image" title="Objective Realities" banner="or.jpg" link="/portfolio/ghostchef" text="Experience life from the perspective of things.">}}
-
-
- {{< gridItem size="5" height="1" offset="0" type="image" title="Objective Realities" banner="wink.jpg" link="/portfolio/ghostchef">}}
 
 {{< /portfolioGrid >}}
