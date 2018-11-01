@@ -49,7 +49,9 @@ Mixing AR and OBJ detection to create infinite platforms on the road.
 From finding AR planes to create a digital parkour/planes game
 {{< fullwidth >}}
 	{{< inlineImage src="/assets/img/rp4.png" width="12" offset="0" >}}
-	{{< /fullwidth >}} 
+	{{< /fullwidth >}}
 	{{< fullwidth >}}
 	{{< inlineVideo src="/assets/video/goat_parkour.mp4" width="12" offset="0" >}}
 {{< /fullwidth >}}
+
+The project was carried out between Rotterdam and Shanghai together with [Simone Rebaudengo](http://www.simonerebaudengo.com/)
