@@ -24,6 +24,7 @@ gallery:
     img: colors5.png
   - 6:
     img: colors6.png
+draft: true
 ---
 ### An analysis of the usage of colors in relation to the perception of depth
 

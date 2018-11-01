@@ -1,5 +1,5 @@
 ---
-weight: 3
+weight: 5
 title: "Monocono"
 bannertype: image
 banner: monocono5.jpg

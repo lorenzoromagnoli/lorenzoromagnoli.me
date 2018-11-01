@@ -1,5 +1,4 @@
-{{ partial "header" . }}
-{{ partial "navBar" . }}
+{{ partial "header" . }} {{ partial "navBar" . }}
 
 
 <div class="container portfolio-single-header">
@@ -20,35 +19,29 @@
 <div class="hero-image">
 	{{ if eq .Params.bannertype "video"}}
 	<div class="img-container responsive-background-video">
-
 		{{ partial "responsiveBackgroundVideo" (dict "video" .Params.banner ) }}
 	</div>
 	{{end}} {{ if eq .Params.bannertype "image"}}
 	<div class="img-container responsive-background-image ">
-
 		{{ partial "responsiveBackgroundImage" (dict "imageName" .Params.banner ) }}
 	</div>
 	{{end}}
 </div>
 
 <div class="container main">
-
-
 	<div class="row">
-
 		<div class="span-8 small-12 text-big">
 			{{ .Params.inShort | markdownify }}
 		</div>
 		<div class="span-3 small-12 span-offset-1 ">
 
-
 			{{ if (not (isset .Params "client")) | or (eq .Params.client "") }}
-			<div class="tag">
-				<div class="label">Client</div>
-				<div class="value">
-					<a href="{{ .Params.clientLink }}">{{ .Params.client }}</a>
+				<div class="tag">
+					<div class="label">Client</div>
+					<div class="value">
+						<a href="{{ .Params.clientLink }}">{{ .Params.client }}</a>
+					</div>
 				</div>
-			</div>
 			{{end}}
 
 			<div class="tag">
@@ -65,42 +58,41 @@
 				</div>
 			</div>
 
-
 		</div>
 	</div>
 
 
 	<div class="row">
-
-
 		<div class="span-7 small-12 span-offset-1 left">
 			<div class="description">
 				{{ .Content }}
 			</div>
 		</div>
-
-
 	</div>
 
+</div>
+
+<div class="projects-navigation">
+	<div class="container">
 
 
-	<!--
-	<div class="row portfolio-carousel" id="gallery">
-		{{ range .Params.gallery}}
-      <img src="{{ $.Site.BaseURL }}assets/img/{{ replace .img "." "-large." }}" class="responsive-img"></img>
+	<div class="row">
+		<div class="span-6">
+			<span class="prev">
+				{{ with .NextInSection }}
+          <a class="previous" href="{{.Permalink}}"> <- previous project </a>
+        {{ end }}
+			</span>
+		</div>
+		<div class="span-6">
+			<span class="next">
 
-      <div class="caption" style="display:none">
-      {{if .caption }}
-      	<h4>{{.caption}}</h4>
-      {{end}}
-      	{{if .desc }}
-      <p>{{.desc}}</p>
-      {{end}}
-      </div>
-
-		{{ end }}
+				{{ with .PrevInSection }}
+          <a class="next" href="{{.Permalink}}"> next project -> </a>
+        {{ end }}
+			</span>
+		</div>
 	</div>
--->
-
+</div>
 </div>
 {{ partial "footer.html" . }}

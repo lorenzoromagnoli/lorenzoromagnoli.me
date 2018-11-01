@@ -19,7 +19,7 @@ gallery:
     img: cloud3.png
   - 4:
     img: cloud4.png
-
+draft: true
 ---
 
 [Arduino Cloud](http://cloud.arduino.cc) is a new addition to the [Arduino Create](http://create.arduino.cc) platform.

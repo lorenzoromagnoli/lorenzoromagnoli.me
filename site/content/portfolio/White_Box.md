@@ -1,5 +1,5 @@
 ---
-weight: 2
+weight: 4
 title: "whitebox"
 year: 2016
 bannertype: image

@@ -24,6 +24,8 @@ gallery:
     img: yellow-grid5.gif
   - 4:
     img: yellow-grid6.gif
+draft: true
+
 ---
 
 ### Representing information trough moving patterns

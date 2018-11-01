@@ -1,5 +1,5 @@
 ---
-weight: -1
+weight: 2
 title: "Ghostchef"
 year: 2017
 bannertype: video

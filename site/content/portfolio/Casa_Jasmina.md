@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 3
 title: "Casa Jasmina"
 year: Torino, 2014-2016
 bannertype: image
