@@ -26,13 +26,10 @@ $(document).ready(function() {
 
 	$( '.splitText' ).each( function( index, element ){
 		var w= $(element).parents( ".portfolio-grid-item" ).width();
-		var p= $(element).parents( ".portfolio-box-caption-content" ).css('padding');
-		p=parseInt(p);
-		w-=2*p;
 	    $( this ).splitLines({
 					tag: '<div class="multiline">',
 		    width: w,
-		    keepHtml: true
+		    keepHtml: true,
 		})
 	});
 
@@ -49,22 +46,76 @@ $(document).ready(function() {
 	});
 
 
-	//adjust size of the videos in the portfolio grid1
-	if ($('.responsive-background-video').width() > $('.responsive-background-video .background-video').width()){
-		$('.responsive-background-video .background-video').css({
-				'width':'auto',
-				'height':'100%',
-				maxWidth:'none',
-				maxHeight:'none'
-		});
-	}else if($('.responsive-background-video').height() > $('.responsive-background-video .background-video').height()){
-		$('.responsive-background-video .background-video').css({
-					'height':'auto',
-					'width':'100%',
-					maxWidth:'none',
-					maxHeight:'none'
-			});
-	}
+
+	$.each($('.responsive-background-video .background-video'),function(index, video){
+		$(video).bind("loadedmetadata", function () {
+	  	var videoWidth = this.videoWidth;
+	    var videoHeight = this.videoHeight;
+
+			var containerWidth=$('.responsive-background-video').width();
+			var containerHeight=$('.responsive-background-video').height();
+
+			var videoRatio=videoWidth/videoHeight;
+			var containerRatio=containerWidth/containerHeight;
+
+			console.log(containerWidth,containerHeight, containerRatio);
+			console.log(videoWidth,videoHeight, videoRatio);
+
+			if (videoRatio>containerRatio){
+					console.log("video is wider than container");
+					$(video).css({
+						maxWidth:'none',
+						maxHeight:'none',
+						'width':'auto',
+						'height':'100%',
+					})
+			}else{
+					console.log("the container is wider than the video");
+					$(video).css({
+						maxWidth:'none',
+						maxHeight:'none',
+						'width':'100%',
+						'height':'auto',
+					})
+			}
+
+	  });
+	});
+
+
+	var lastScrollTop = 0;
+	$(window).scroll(function(event){
+	   var st = $(this).scrollTop();
+	   if (st > lastScrollTop){
+			 $('#navBar').toggleClass('visible',false);
+	   } else {
+			 console.log("scrollin")
+			 $('#navBar').toggleClass('visible',true);
+	   }
+	   lastScrollTop = st;
+	});
+
+
+
+	// if ($('.responsive-background-video').width() > $('.responsive-background-video .background-video').width()){
+	// 	$('.responsive-background-video .background-video').css({
+	// 		maxWidth:'none',
+	// 		maxHeight:'none',
+	// 			'width':'auto',
+	// 			'height':'100%',
+	//
+	// 	});
+	// 	console.log("w>w");
+	// }else if($('.responsive-background-video').height() > $('.responsive-background-video .background-video').height()){
+	// 	$('.responsive-background-video .background-video').css({
+	// 		maxWidth:'none',
+	// 		maxHeight:'none',
+	// 		'width':'100%',
+	// 		'height':'auto',
+	//
+	// 		});
+	// 				console.log("h>h");
+	// }
 
 
 
@@ -97,10 +148,6 @@ $(document).ready(function() {
 	// 	event.preventDefault();
 	// 	antefact.play();
 	// })
-
-	$("#gotoabout").click(function(){
-		scrollToAnchor('#slide_2');
-	})
 
 	paperjsAniamtion.init();
 
@@ -358,6 +405,12 @@ for (var i = advSelects.length - 1; i >= 0; i--) {
 // var textarea = document.querySelector('textarea');
 //
 // textarea.addEventListener('keydown', autosize);
+
+window.openInNewTab= function(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
+
 
 function autosize() {
 	console.log("resizing");

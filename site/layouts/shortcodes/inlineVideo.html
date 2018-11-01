@@ -1,0 +1,18 @@
+{{ $.Scratch.Set "type" (.Get "type") }}
+{{ $type := $.Scratch.Get "type" }}
+
+<div class="span-{{.Get "width"}} span-offset-{{.Get "offset"}} ">
+	{{ if eq $type "vimeo"}}
+	<div class="resp-container">
+
+		<iframe class="resp-iframe" src="https://player.vimeo.com/video/{{.Get "id"}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</div>
+	{{else if eq $type "youtube"}}
+	{{else}}
+
+	<video class="responsive-img" controls>
+	    <source type="video/webm" src="{{.Get "src"}}">
+	</video>
+	{{end}}
+
+</div>

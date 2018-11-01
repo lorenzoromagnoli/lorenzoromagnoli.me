@@ -4,29 +4,58 @@
 {{ $.Scratch.Set "banner" (.Get "banner") }}
 {{ $banner := $.Scratch.Get "banner" }}
 
+{{ $.Scratch.Set "linktype" (.Get "linktype") }}
+{{ $linktype := $.Scratch.Get "linktype" }}
 
 
-<div class="span-{{ .Get "size" }} small-12 portfolio-grid-item {{.Get "type"}} height-{{ .Get "height" }} span-offset-{{ .Get "offset" }}" data-aos="slide-up">
+
+<div class="span-{{ .Get "size" }} small-12 portfolio-grid-item {{.Get "type"}}  span-offset-{{ .Get "offset" }}" data-aos="fade-in" data-aos-duration="1500" >
 	<!-- <img src="img/{{ replace .Params.img "." "_cover." }}" class="img-responsive" alt=""></img> -->
 
-
-
-	{{ if eq $type "video"}}
-		<div class="img-container responsive-background-video" >
-			{{ partial "responsiveBackgroundVideo" (dict "video" $banner ) }}
-		</div>
-	{{end}}
-
-	{{ if eq $type "image"}}
-		<div class="img-container responsive-background-image ">
-			{{ partial "responsiveBackgroundImage" (dict "imageName" $banner ) }}
-		</div>
-	{{end}}
+	<h1 class="project-name splitText">
+		<a href="{{.Get "link"}}" 	{{ if eq $linktype "external"}}target="_blank"{{end}} >
+			{{ .Get "title" }}
+		</a>
+	</h1>
 
 	{{ if eq $type "text"}}
+		<h1 class=" grid-sentence splitText">
+		{{.Get "text" | markdownify}}
+		</a>
+		</h1>
+
+	{{else}}
+		<h2 class=" grid-sentence splitText">
+		{{.Get "text" | markdownify}}
+		</h2>
+
 	{{end}}
 
-	<div class="portfolio-box-caption" onclick="location.href='{{.Get "link"}}';" style="cursor:pointer;">
+
+
+	{{ if ne $type "text"}}
+		<div class="img height-{{ .Get "height" }}"
+		{{ if eq $linktype "external"}}
+		onclick="openInNewTab({{.Get "link"}})"
+		{{else}}
+		onclick="location.href='{{.Get "link"}}'"
+		{{end}}
+		>
+			{{ if eq $type "video"}}
+				<div class="img-container responsive-background-video " >
+					{{ partial "responsiveBackgroundVideo" (dict "video" $banner ) }}
+				</div>
+			{{end}}
+
+			{{ if eq $type "image"}}
+				<div class="img-container responsive-background-image ">
+					{{ partial "responsiveBackgroundImage" (dict "imageName" $banner ) }}
+				</div>
+			{{end}}
+
+		</div>
+	{{end}}
+	<!-- <div class="portfolio-box-caption" onclick="location.href='{{.Get "link"}}';" style="cursor:pointer;">
 		<div class="portfolio-box-caption-content">
 
 			<div>
@@ -52,7 +81,7 @@
 				<span>
 					{{ .Get "title" }}
 				</span>
-			</div> -->
+			</div>
 		</div>
-	</div>
+	</div> -->
 </div>

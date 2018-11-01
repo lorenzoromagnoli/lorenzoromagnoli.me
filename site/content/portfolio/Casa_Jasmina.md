@@ -4,11 +4,12 @@ title: "Casa Jasmina"
 year: Torino, 2014-2016
 bannertype: image
 banner: casajasmina.jpg
-client: Start Bootstrap
-clientLink: "#"
+client: Arduino
+clientLink: "arduino.cc"
 size: 8
 height: 2
-category: research & curation
+role: Project Management, Interaction Design, Lead Technologist
+category: research and curation
 inShort: "Curated by Bruce Sterling, Massimo Banzi and Jasmina Teshanovich, [Casa Jasmina](http://casajasmina.arduino.cc) is an ongoing pilot project in the business space of domestic electronic networking, or, “the Internet of Things in the Home.”<br>The goal was to integrate traditional Italian skills in furniture and interior design with emergent skills in Italian open-source electronics."
 gallery:
   - 1:
@@ -49,11 +50,26 @@ gallery:
 
 What is really relevant to people in a "connected home"? What's the real use of a connected washing machine or of a lamp that changes color? How can a connected experience enrich the life of the inhabitants of an apartment? What's the relevance of Open Source software, open hardware and open design in this space?
 
-{{< figure src="/assets/img/casajasmina1.jpg" title="Steve Francia" >}}
+{{< fullwidth >}}
+	{{< inlineImage src="/assets/img/casajasmina7.jpg" width="10" offset="0" >}}
+{{< /fullwidth >}}
 
 
 Casa Jasmina in the last two years has been an exceptionally fertile research hub and idea collector; many events, workshops, meetup, conferences, residencies have been organized to bring together companies, artists, designers and makers to discuss and envision the home of the future.
 
 While the community and the interest in the project has been growing, the core team  of the project has been involved in an extensive user research process to test ideas and scenarios on spot. Continuesly iterating, generating new ideas and building new Connected devices based on the knowledge gained along the process.
 
+{{< fullwidth >}}
+	{{< inlineImage src="/assets/img/casajasmina3.jpg" width="5" offset="0" >}}
+	{{< inlineImage src="/assets/img/casajasmina5.jpg" width="6" offset="0" >}}
+	{{< inlineImage src="/assets/img/casajasmina8.jpg" width="8" offset="2" >}}
+{{< /fullwidth >}}
+
+
 As project manager and lead interaction designer I had the role of coordinating the team and the community effort in building novel connected use cases; I curated the space selecting interesting project to be showcased inside the apartment; I lead the ongoing user research plan, and held several design workshop.
+
+{{< fullwidth >}}
+	{{< inlineImage src="/assets/img/casajasmina6.jpg" width="6" offset="0" >}}
+	{{< inlineImage src="/assets/img/casajasmina2.jpg" width="4" offset="0" >}}
+	{{< inlineImage src="/assets/img/casajasmina1.jpg" width="8" offset="2" >}}
+{{< /fullwidth >}}
