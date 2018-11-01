@@ -12,7 +12,9 @@ weight: 5
 
 		{{< gridItem size="10" height="3" offset="2" type="image" title="Objective Realities" banner="or.jpg" link="/portfolio/Objective_Realities" text="Experience life from the perspective of things.">}}
 
-		{{< gridItem size="7" height="2" offset="1" type="video" title="Microbit.js" banner="microbitjs.webm" link="https://antefact.github.io/microBit.js/" linktype="external" text="A javascript library connect to BBC micro:bit in the browser">}}
+		{{< gridItem size="6" height="2" offset="0" type="video" title="Reality Platformers" banner="cow_platformer.mov" link="/portfolio/Reality_Platformers" text="An exploration of AR+AI playful experiences.">}}
+
+		{{< gridItem size="7" height="2" offset="4" type="video" title="Microbit.js" banner="microbitjs.webm" link="https://antefact.github.io/microBit.js/" linktype="external" text="A javascript library connect to BBC micro:bit in the browser">}}
 
 		{{< gridItem size="12" height="2" offset="0" type="image" title="Casa Jasmina" banner="casajasmina.jpg" link="/portfolio/Casa_Jasmina" text="Researching the open source way to connected home">}}
 
