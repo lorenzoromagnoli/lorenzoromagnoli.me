@@ -23,7 +23,7 @@ weight: 5
 		{{< gridItem size="10" height="3" offset="0" type="image" title="Monocono" banner="monocono.png" link="/portfolio/monocono" text="A do-it-yourself kinetic and programmed artwork">}}
 
 {{< fullpage >}}
-		{{< gridItem size="12" height="1" offset="0" type="text" text="I'm part of [automato.farm](automato.farm), a design collective busy exploring the implication of new technologies in the neear future. <br>I often teach, run workshops and give public talks about my work.<br> For work in progress, and live updates you can follow me on [Twitter](https://twitter.com/10r3n20) and [Instagram.](https://www.instagram.com/10r3n20/)<br><br> Get in touch @ lorenzormgnl@gmail.com ">}}
+		{{< gridItem size="12" height="1" offset="0" type="text" text="I'm part of [automato.farm](automato.farm), a design collective busy exploring the implication of new technologies in the neear future. <br>I often teach, run workshops and give public talks about my work.<br> For work in progress, and live updates you can follow me on [Twitter](https://twitter.com/10r3n20) and [Instagram.](https://www.instagram.com/10r3n20/)<br><br> Get in touch lorenzormgnl@gmail.com ">}}
 {{< /fullpage >}}
 
 
