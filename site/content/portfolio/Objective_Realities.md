@@ -1,6 +1,6 @@
 ---
 weight: 2
-title: "Ghostchef"
+title: "Objective Realities"
 year: 2017
 bannertype: video
 banner: or_gif.webm

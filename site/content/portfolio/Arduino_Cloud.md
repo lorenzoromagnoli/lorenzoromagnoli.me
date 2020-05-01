@@ -1,15 +1,16 @@
 ---
 weight: 5
 title: "Arduino Cloud"
-year: 2016
+year: 2015
 bannertype: image
 banner: cloud.png
-client: Start Bootstrap
-clientLink: "#"
+client: Arduino
+clientLink: "arduino.cc"
 size: 12
-height: 3
+height: 4
+role: Interaction designer, frontend developer
 category: tool design
-inShort: "Curated by Bruce Sterling, Massimo Banzi and Jasmina Teshanovich, ['Casa Jasmina'](http://casajasmina.arduino.cc) is an ongoing pilot project in the business space of domestic electronic networking, or, “the Internet of Things in the Home.” The goal was to integrate traditional Italian skills in furniture and interior design with emergent skills in Italian open-source electronics."
+inShort: "Arduino Cloud is a tool designed for non-developer providing an easy and yet secure and reliable way to connect Arduino Boards to the internet."
 gallery:
   - 1:
     img: cloud1.png
@@ -19,11 +20,19 @@ gallery:
     img: cloud3.png
   - 4:
     img: cloud4.png
-draft: true
+draft: false
 ---
 
-[Arduino Cloud](http://cloud.arduino.cc) is a new addition to the [Arduino Create](http://create.arduino.cc) platform.
-The goal of the platform is to give user a easy way to connect their Arduino Boards to the internet, monitor the status of its devices and connect one board to the other.
+In 2016 as part of my involvement in the developmetn of a IoT strategy for Arduino I contributed to the conceptualization and the design of the first iteration of the Arduino Cloud platform.
+At the time the platform was already featuring a way to monitor some devices status from the distance, the idea of object properties preserved in the current platforn and the possibility of automatic code tempalte generation.
+
+{{< fullwidth >}}
+	{{< inlineImage src="/assets/img/cloud1.png" width="9" offset="0" >}}
+	{{< inlineImage src="/assets/img/cloud2.png" width="9" offset="0" >}}
+	{{< inlineImage src="/assets/img/cloud3.png" width="9" offset="0" >}}
+  {{< inlineImage src="/assets/img/cloud4.png" width="9" offset="0" >}}
+{{< /fullwidth >}}
+
 The platform was designed with simplicity in mind: as well as the other Arduino products it is usable by beginners, and pro-users.
 
-The project, developed the web team internal to Arduino, is still on going, and many features will be implemented in the coming months.
+Although the platform went trough a series of iterations it maintains the core element I contributed to develop. Check it out [here](https://create.arduino.cc/iot/)
