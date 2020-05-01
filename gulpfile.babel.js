@@ -31,16 +31,19 @@ gulp.task( "hugo-preview", ( cb ) => buildSite( cb, hugoArgsPreview ) );
 //     .pipe(browserSync.stream())
 // ));
 
-gulp.task( 'copyassets', function() {
+gulp.task( 'copyassets', ( done ) => {
   gulp.src( './src/css/**/*' )
     .pipe( gulp.dest( './dist/css' ) );
   gulp.src( './assets/**.*' )
     .pipe( gulp.dest( './dist/assets' ) );
+
+  done();
 } );
 
-gulp.task( 'copyVideo', function() {
+gulp.task( 'copyVideo', ( done ) => {
   gulp.src( './vid/**.*' )
     .pipe( gulp.dest( './dist/assets/video' ) );
+  done();
 } );
 
 
