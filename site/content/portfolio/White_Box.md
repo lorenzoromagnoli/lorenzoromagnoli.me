@@ -4,8 +4,6 @@ title: "whitebox"
 year: 2016
 bannertype: image
 banner: whitebox.jpg
-client: Start Bootstrap
-clientLink: "#"
 size: 8
 height: 2
 category: design fiction

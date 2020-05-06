@@ -3,7 +3,6 @@ weight: 12
 title: "Digital Lathe"
 bannertype: image
 banner: digitalLathe.jpg
-client: Start Bootstrap
 year: 2011
 clientLink: "#"
 size: 6

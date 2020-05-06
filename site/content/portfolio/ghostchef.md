@@ -9,7 +9,7 @@ clientLink: "http://ghostchef.bitsxbites.com/"
 size: 12
 height: 3
 category: prouct service
-role: Interaction Designer, Cook for a day
+role: research, concept development, UX/UI, Cook for a day, Technologist
 inShort: "Imagine that moment when you are thinking about what to cook, starting from an ingredient you have in the fridge or even a type of taste you have in mind. What if instead of losing yourself in infinite searches online or going through recipe books, you would be able to collaborate with a chef as if you were both sketching or writing on a piece of paper?"
 weight: 1
 ---
@@ -40,6 +40,6 @@ While there are many machines that already help automate and simplify the act of
 	{{< inlineVideo src="/assets/video/Ghostchef_concept.webm" width="12" offset="0" >}}
 {{< /fullwidth >}}
 
-**Do you want to know more?** read the full story [here](ghostchef.bitsxbites.com).
+**Do you want to know more?** read the full story [here](http://ghostchef.bitsxbites.com).
 
 Ghost Chef was designed and developed in collaboration with [Yeast](https://medium.com/@hi_33155) and in collaboration with [Bits x Bites](http://www.bitsxbites.com).

@@ -8,7 +8,7 @@ client: Arduino
 clientLink: "arduino.cc"
 size: 12
 height: 4
-role: Interaction designer, frontend developer
+role: Concept development, UX/UI, frontend development
 category: tool design
 inShort: "Arduino Cloud is a tool designed for non-developer providing an easy and yet secure and reliable way to connect Arduino Boards to the internet."
 gallery:

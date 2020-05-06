@@ -3,8 +3,6 @@ weight: 6
 title: "TINK"
 bannertype: image
 banner: tink.png
-client: Start Bootstrap
-clientLink: "#"
 year: 2016
 size: 8
 height: 2

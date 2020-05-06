@@ -4,7 +4,6 @@ title: "Believe it yourself"
 year: 2019
 bannertype: image
 banner: BIY_3.jpg
-client:
 clientLink: "http://ghostchef.bitsxbites.com/"
 size: 12
 height: 3

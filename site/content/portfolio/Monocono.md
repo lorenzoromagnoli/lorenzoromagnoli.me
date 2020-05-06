@@ -3,14 +3,12 @@ weight: 5
 title: "Monocono"
 bannertype: image
 banner: monocono5.jpg
-client: Start Bootstrap
-clientLink: "#"
 year: 2016
 size: 4
 height: 1
 category: Workshop
 inShort: "Monocono is a do-it-yourself kinetic and programmed artwork. It is a USB powered electronic kit featuring digitally fabricated parts and a programmable board. A potentiometer controls the speed of a small motor that drives two rods and creates the effect of a virtual conic volume."
-role: "pcb design"
+role: "pcb design, kit design"
 gallery:
   - 1:
     img: monocono1.jpg

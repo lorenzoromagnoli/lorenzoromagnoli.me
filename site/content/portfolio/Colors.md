@@ -4,8 +4,6 @@ title: "Colors"
 year: 2012
 bannertype: image
 banner: colors.png
-client: Start Bootstrap
-clientLink: "#"
 size: 4
 height: 1
 category: interactive visualization

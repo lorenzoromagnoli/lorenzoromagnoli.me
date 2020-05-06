@@ -4,8 +4,6 @@ title: "Wink"
 year: 2016
 bannertype: image
 banner: wink.jpg
-client: Start Bootstrap
-clientLink: "#"
 size: 4
 height: 1
 category: product service

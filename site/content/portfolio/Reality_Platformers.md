@@ -7,7 +7,7 @@ banner: rp_context.jpg
 size: 12
 height: 3
 category: AR experiments
-role: "concept development, prototyping"
+role: "concept development, unity prototyping"
 inShort: "A series of experiments to explore new interactions mixing machine vision and Augmented realitiy."
 weight: 2
 draft: false

@@ -3,7 +3,6 @@ weight: 9
 title: "emotional lockscreen"
 bannertype: image
 banner: yellow-grid.gif
-client: Start Bootstrap
 year: 2016
 clientLink: "#"
 size: 4

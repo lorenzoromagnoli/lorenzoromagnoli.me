@@ -5,10 +5,10 @@ year: 2018
 bannertype: video
 banner: square.mp4
 client: Educreators
-clientLink: "projectsquare.cc"
+clientLink: "http://projectsquare.cc"
 size: 8
 height: 3
-role: Concept development, Interaction designer
+role: Concept development, Interaction design
 category: educational kit
 inShort: "An open education initiative that makes it easy and fun for educators to bring computational thinking into the classroom, beyond the screens."
 gallery:

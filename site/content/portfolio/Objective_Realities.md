@@ -4,13 +4,11 @@ title: "Objective Realities"
 year: 2017
 bannertype: video
 banner: or_gif.webm
-client:
-clientLink: "http://ghostchef.bitsxbites.com/"
 size: 12
 height: 3
 category: virtual reality
 inShort: "Objective Realities is series of VR experiences that change the perspective from a human point of view to the one of an object. In OR you will be able to see and act in a virtual smart home with the capabilities and limitations of a specific object and listen to the invisible chatter that happens between networked things and the home."
-role: helmet design, manifacturing coordination, software development
+role: helmet design and engineering, manifacturing coordination, software development
 video:
 ---
 
