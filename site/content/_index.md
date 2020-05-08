@@ -12,6 +12,8 @@ weight: 5
 
 		{{< gridItem size="10" height="3" offset="2" type="image" title="Objective Realities" banner="or.jpg" link="/portfolio/Objective_Realities" text="Experience life from the perspective of things.">}}
 
+		{{< gridItem size="8" height="2" offset="0" type="video" title="Pomodoro" banner="video_pomodoro.mp4" link="/portfolio/pomodoro" text="A series of online video tutorials about programming asynchrounous feedbacks with Arduino">}}
+
 		{{< gridItem size="12" height="3" offset="0" type="video" title="👻🍳 Ghostchef" banner="ghostchef-sliders.webm" link="/portfolio/ghostchef" text=" An experiment on how to bring Artificial intelligence into the kitchen">}}
 
 		{{< gridItem size="7" height="2" offset="0" type="image" title="Project Square" banner="square1.jpg" link="/portfolio/Project_Square" text="Bringing computational thinking into the classroom, beyond the screens.">}}

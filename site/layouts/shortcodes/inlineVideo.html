@@ -8,6 +8,9 @@
 		<iframe class="resp-iframe" src="https://player.vimeo.com/video/{{.Get "id"}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	</div>
 	{{else if eq $type "youtube"}}
+	<div class="resp-container">
+		<iframe class="resp-iframe" src="https://www.youtube.com/embed/{{.Get "id"}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</div>
 	{{else}}
 
 	<video class="responsive-img" controls>
