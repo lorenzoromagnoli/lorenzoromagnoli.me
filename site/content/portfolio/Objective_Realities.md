@@ -12,6 +12,10 @@ role: helmet design and engineering, manifacturing coordination, software develo
 video:
 ---
 
+{{< fullwidth >}}
+{{< inlineImage src="/assets/img/OR_illo.png" width="12" offset="0" >}}
+{{< /fullwidth >}}
+
 ### How does it feel to be an object in a smart home?
 
 As things become smarter and connected, their roles in people’s lives are challenged. Things become closer and closer to us, eventually becoming “users” themselves. How will we understand objects’ needs and perspectives and potentially design for them?
