@@ -8,11 +8,15 @@ weight: 5
 		{{< gridItem size="12" height="1" offset="0" type="text" text="Hi! 👋  <br/> I'm Lorenzo Romagnoli 👨‍💻<br/> I design and prototype interactive products 🤖. <br/> <br/> Scroll 👇 for a selection of projects.">}}
 {{< /fullpage >}}
 
+		{{< gridItem size="9" height="2" offset="3" type="image" title="Ultimaker Cura" banner="Cura.png" link="/portfolio/UltimakerCura" text="The world’s most popular 3D printing software.">}}
+
 	 	{{< gridItem size="12" height="3" offset="0" type="image" title="Believe It Yourself" banner="BIY_3.jpg" link="/portfolio/Believe_It_yourself" text="As we tend to believe what machines say without often questioning them, now we can at least make machines that believe what we might believe in.">}}
 
 		{{< gridItem size="10" height="3" offset="2" type="image" title="Objective Realities" banner="or.jpg" link="/portfolio/Objective_Realities" text="Experience life from the perspective of things.">}}
 
 		{{< gridItem size="8" height="2" offset="0" type="video" title="Pomodoro" banner="video_pomodoro.mp4" link="/portfolio/pomodoro" text="A series of online video tutorials about programming asynchrounous feedbacks with Arduino">}}
+
+		{{< gridItem size="10" height="2" offset="2" type="video" title="Shiny handbags" banner="ks.mov" link="/portfolio/KateSpade" text="An exploration into interactive concepts for playful handbags.">}}
 
 		{{< gridItem size="12" height="3" offset="0" type="video" title="👻🍳 Ghostchef" banner="ghostchef-sliders.webm" link="/portfolio/ghostchef" text=" An experiment on how to bring Artificial intelligence into the kitchen">}}
 

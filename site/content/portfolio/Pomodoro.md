@@ -9,7 +9,7 @@ clientLink: "https://www.tudelft.nl/io/"
 size: 12
 height: 4
 role: Concept development, contents creation, video instructions, kit design and prototyping
-category:
+category: "Education"
 inShort: "A physical programming kit accompanied by a series of video-tutorials to learn how to program asynchrounous and rich feedback using Arduino."
 draft: false
 ---
