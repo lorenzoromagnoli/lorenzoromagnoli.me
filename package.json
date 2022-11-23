@@ -16,7 +16,7 @@
     "babel-eslint": "^10.1.0",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "caniuse-db": "^1.0.30000808",
     "eslint": "^7.8.1",
     "eslint-plugin-import": "^2.22.0",
